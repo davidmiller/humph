@@ -24,11 +24,7 @@ class Repertiore(object):
         for raw in dir(songs):
             if raw.startswith('__'):
                 continue
-            try:
-                self.songs.append(LeadSheet(getattr(songs,raw)))
-            except:
-                print(raw)
-                continue
+            self.songs.append(LeadSheet(getattr(songs,raw)))
         return
 
     def filter(self, **kwargs):

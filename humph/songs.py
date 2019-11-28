@@ -359,7 +359,138 @@ title: Broadway
   F-7  | Bb7 |   EbM6    | %        |
 """
 
+BUT_BEAUTIFUL = """
+title: But Beautiful
+---
+GM7     | B07 E7b9 | A-7          | C#07 F#7b9 |
+GM7     | B07 E7b9 | A7           | %          |
+D7 D7/C | B-7 E7   | A-7   D7     | GM7        |
+E-7     | A7       | A-7          | D7         |
+GM7     | B07 E7b9 | A-7          | C#07 F#7b9 |
+GM7     | B07 E7b9 | A7           | %          |
+D7 D7/C | B-7 E7   | A-7 . F#0 B7 | E-7  F7    |
+B-7 E7  | A-7 D7   | G6    E-7    | A-7  D7    |
+"""
+
+BUT_NOT_FOR_ME = """
+title: But Not For Me
+---
+F7   | Bb7 | EbM7 Ab7 | G-7  C7  |
+F7   | Bb7 | EbM7     | Bb-7 Eb7 |
+AbM7 | Db7 | EbM7     | C-7      |
+F-7  | %   | F-7      | Bb7      |
+F7   | Bb7 | EbM7 Ab7 | G-7  C7  |
+F7   | Bb7 | EbM7     | Bb-7 Eb7 |
+AbM7 | Db7 | EbM7 Ab7 | G-7  G7  |
+F7   | Bb7 | Eb6      | %        |
+"""
+
+BYE_BYE_BLACKBIRD = """
+title: Bye Bye Blackbird
+---
+FM7 | G-7 C7   | FM7 | G-7 C7   |
+FM7 | A07 D7b9 | G-7 | C7       |
+G-7 | D7       | G-7 | C7       |
+G-7 | C7       | F6  | %        |
+F7  | E7       | Eb7 | D7b9     |
+G-7 | %        | Db7 | C7       |
+FM7 | G-7 C7   | FM7 | A07 D7b9 |
+G-7 | C7       | FM7 | G-7 C7   |
+"""
+
+CANTALOUPE_ISLAND = """
+title: Cantaloupe Island
+---
+F-11   | % | % | % |
+Db7#11 | % | % | % |
+D-11   | % | % | % |
+F-11   | % | % | % |
+"""
+
+CARAVAN = """
+title: Caravan
+---
+{ C7b9 | % | %  | %   |
+  C7b9 | % | %  | %   |
+  C7b9 | % | %  | %   |
+  F-   | % | %  | %   |}
+  F7   | % | %  | %   |
+  Bb7  | % | %  | %   |
+  Eb7  | % | %  | %   |
+  Ab6  | % | G7 | Db7 |
+  C7b9 | % | %  | %   |
+  C7b9 | % | %  | %   |
+  C7b9 | % | %  | %   |
+  F-   | % | %  | %   |
+"""
+
+CEORA = """
+title: Ceora
+---
+AbM7 | Bb-7 Eb7 | AbM7   | Eb-7 Ab7 |
+DbM7 | D-7  G7  | C-7    | F7       |
+Bb-7 | Eb7      | C-7    | F7       |
+D-7  | G7       | C-7 F7 | Bb-7 Eb7 |
+AbM7 | Bb-7 Eb7 | AbM7   | Eb-7 Ab7 |
+DbM7 | D-7  G7  | C-7    | F7alt    |
+Bb-7 | Eb7      | C07    | F7alt    |
+Bb-7 | Eb7      | AbM7   | Bb-7 Eb7 |
+"""
+
+CHEROKEE = """
+title: Cherokee
+---
+{ Bb6  | %    | F-7 | Bb7   |
+  EbM7 | %    | Ab7 | %     |
+  Bb6  | %    | C7  | %     |
+[ C-7  | G7b9 | C-7 | F7#5 ]
+[ C-7  | F7   | Bb6 | %    ]|}
+  C#-7 | F#7  | BM7 | %     |
+  B-7  | E7   | AM7 | %     |
+  A-7  | D7   | GM7 | %     |
+  G-7  | C7   | C-7 | F7#5  |
+  Bb6  | %    | F-7 | Bb7   |
+  EbM7 | %    | Ab7 | %     |
+  Bb6  | %    | C7  | %     |
+  C-7  | F7   | Bb6 | %     |
+"""
+
+COME_RAIN_OR_COME_SHINE = """
+title: Come Rain Or Come Shine
+---
+FM7      | E07 A7b9 | D-       | %        |
+G7       | C7       | FM7      | C-7 F7   |
+Bb-7     | F-7      | Bb-7     | G-7 C7   |
+B07 E7b9 | A07 D7b9 | A07 D7b9 | G-7 C7   |
+FM7      | E07 A7b9 | D-       | %        |
+B-7      | E7       | A7       | %        |
+D7       | %        | G7       | Bb7 A7b9 |
+D-  B07  | E07 A7b9 | D-       | G-7 C7   |
+"""
+
+CONFIRMATION = """
+title: Confirmation
+---
+{ FM7  | E07  A7  |   D-7 G7 | C-7  F7   |
+  Bb7  | A-7  D7  | [ G7     | C7b9     ]
+                    [ G-7 C7 | FM7      ]|}
+  C-7  | F7       |   BbM7   | %         |
+  Eb-7 | Ab7      |   DbM7   | G-7 C7alt |
+  FM7  | E07  A7  |   D-7 G7 | C-7  F7   |
+  Bb7  | A-7  D7  |   G-7 C7 | FM7  C7   |
+"""
+
 ### Pending Song ###
+
+GROOVIN_HIGH = """
+title: Groovin' High
+---
+{ Eb6 | %    | A-7 | D7       |
+  Eb6 | %    | G-7 | C7       |
+  F7  | %    | F-7 | Bb7      |
+[ G-7 | F#-7 | F-7 | Bb7#9   ]
+[ F-7 | Db7  | Eb7 | F-7 Bb7 ]|}
+"""
 
 INDIANA = """
 title: Indiana
@@ -374,6 +505,15 @@ D-      | E07 A7   | D- D-7/C | Bo7      |
 A-7 D7  | G-7 C7   | F6 F#o7  | G-7 C7   |
 """
 
+LADY_BIRD = """
+title: Lady Bird
+---
+CM7  | %  | F-7      | Bb7       |
+CM7  | %  | Bb-7     | Eb7       |
+AbM7 | %  | A-7      | D7        |
+D-7  | G7 | CM7 EbM7 | AbM7 DbM7 |
+"""
+
 ST_THOMAS = """
 title: St. Thomas
 ---
@@ -381,4 +521,15 @@ CM7 F7   | E-7 A7   | D-7 G7 | C6 |
 CM7 F7   | E-7 A7   | D-7 G7 | C6 |
 E07      | A7b9     | D-7    | G7 |
 CM7 C7/F | FM7 F#o7 | G7     | C6 |
+"""
+
+WOODYN_YOU = """
+title: Woody'n You
+---
+{ G07      | C7b9     | F07      | Bb7b9 |
+  Eb-7     | Ab7b9    | DbM7     | %     | }
+  Ab-7 Db7 | Ab-7 Db7 | Ab-7 Db7 | GbM7  |
+  Bb-7 Eb7 | Bb-7 Eb7 | Bb-7 Eb7 | AbM7  |
+  G07      | C7b9     | F07      | Bb7b9 |
+  Eb-7     | Ab7b9    | DbM7     | %     |
 """

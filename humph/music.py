@@ -193,7 +193,7 @@ class LeadSheet(object):
             meta, text = self._leadsheet_string.split('---')
             pairs = meta.split('\n')
             for pair in pairs:
-                if pair:
+                if pair.strip():
                     k, v = pair.split(':')
                     setattr(self, k.strip(), v.strip())
         else:

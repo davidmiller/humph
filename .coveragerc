@@ -1,0 +1,7 @@
+[run]
+source =
+    humph
+
+omit =
+    humph/tests/*
+    humph/songs.py

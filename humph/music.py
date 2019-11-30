@@ -135,6 +135,12 @@ class Chord(object):
 
         return
 
+    def enharmonic_root(self):
+        """
+        Return the standard enharmonic spelling of the root
+        """
+        return standard_enharmonics(self.root)
+
 
 class Bar(object):
     """

@@ -9,7 +9,6 @@ from humph.utils import perc
 # TODO:
 #
 # Minor 2-5
-# Major - parrallel minor
 # 6-2-5-1
 # I7 - IV7 (Blues movement)
 # II - V - 17 (1dominant rather than minor )
@@ -98,6 +97,7 @@ class Find25s(Finder):
                         instances.append(sequence)
 
         return count, instances
+
 
 class Find51s(Finder):
     """
@@ -265,6 +265,33 @@ class FindMinor251s(Finder):
         return count, instances
 
 
+class FindMajorParallelMinor(Finder):
+    """
+    Find occurrences of the Major to Parrallel Minor cadence
+    """
+    name = 'Major-Parallel Minor'
+
+    def find(self):
+        """
+        returns count, instances
+        """
+        count = 0
+        instances = []
+
+        chords = [c for bar in self.leadsheet for c in bar]
+
+        chord_sequences = sequences(chords, 2)
+
+        for sequence in chord_sequences:
+            if sequence[0].major:
+                if sequence[1].minor:
+                    if sequence[0].enharmonic_root() == sequence[1].enharmonic_root():
+                        count += 1
+                        instances.append(sequence)
+
+        return count, instances
+
+
 FINDERS = [
     Find251s,
     Find25s,
@@ -272,4 +299,5 @@ FINDERS = [
     Find1625s,
     Find3625s,
     FindMinor251s,
+    FindMajorParallelMinor,
 ]

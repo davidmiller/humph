@@ -480,6 +480,139 @@ title: Confirmation
   Bb7  | A-7  D7  |   G-7 C7 | FM7  C7   |
 """
 
+CORCOVADO = """
+title: Corcovado
+---
+A-6 | %   | Abo7    | %      |
+G-7 | C7  | Fo7 FM7 | FM7    |
+F-7 | Bb7 | E-7     | Ab7b13 |
+D7  | %   | D-7     | G7     |
+A-6 | %   | Abo7    | %      |
+G-7 | C7  | Fo7 FM7 | FM7    |
+F-7 | Bb7 | E-7     | A-7    |
+D-7 | G7  | E-7     | A7     |
+D-7 | G7  |
+C6  |
+"""
+
+COUNTDOWN = """
+title: Countdown
+---
+E-7 F7  | BbM7 Db7 | GbM7 A7 | DM7  |
+D-7 Eb7 | AbM7 B7  | EM   G7 | CM7  |
+C-7 Db7 | GbM7 A7  | DM6  F7 | BbM7 |
+E-7     | F7       | BbM7    | A7   |
+"""
+
+DARN_THAT_DREAM = """
+title: Darn That Dream
+---
+{ G6 . Bb-7 Eb7 | A-7 B7#11 | E- E-/D A7/C# C7 |   B07     E7       |
+  A-7  F7       | B-7 Bb-7  | A-7     D7       | [ B-7 Bb7 A-7 D7  ]
+                                                 [ G6  .   F-7 Bb7 ]|}
+  EbM7 C-7      | F-7 Bb7   | G-7 .   F#-7  B7 |   F-7     Bb7      |
+  EbM7 C-7      | G-        | A-7     D7       |   Bb-7 Eb7 A-7 D7  |
+  G6 . Bb-7 Eb7 | A-7 B7#11 | E- E-/D A7/C# C7 |   B07     E7       |
+  A-7  F7       | B-7 Bb-7  | A-7     D7       |   G6   .  A-7  D7  |
+"""
+
+DAYS_OF_WINE_AND_ROSES = """
+title: Days Of Wine And Roses
+---
+FM7      | Eb7#11    | A-7 | D7b9   |
+G-7      | %         | Eb9 | %      |
+A-7      | D-7       | G-7 | G-7/F  |
+E07 A7b9 | D-7 G7    | G-7 | C7     |
+FM7      | Eb7#11    | A-7 | D7b9   |
+G-7      | %         | Eb9 | %      |
+A-7      | D-7 D-7/C | B07 | E7b9   |
+A-7  D-7 | G-7 C7    | F6  | G-7 C7 |
+"""
+
+DESAFINADO = """
+title: Desafinado
+---
+FM7 | %      | G7#11 | %    | G-7  | C7   | A07  | D7b9 |
+G-7 | A7b9   | D7    | D7b9 | G7b9 | %    | GbM7 | %    |
+FM7 | %      | G7#11 | %    | G-7  | C7   | A07  | D7b9 |
+G-7 | Bb-6   | FM7   | E7#9 | AM7  | Bbo7 | B-7  | E7   |
+AM7 | Bbo7   | B-7   | E7   | AM7  | F#-7 | B-7  | E7   |
+CM7 | C#o7   | D-7   | G7   | G-7  | Eb-6 | G7   | C7b9 |
+FM7 | %      | G7#11 | %    | G-7  | C7   | A07  | D7b9 |
+G-7 | Bb-6   | FM7   | D-7  | G7   | %    | Eb7  | %    |
+G7  | G-7 C7 | F6    | C7   |
+"""
+
+DOLPHIN_DANCE = """
+title: Dolphin Dance
+---
+EbM7      | DbM7/Eb | EbM7    | D07 G7b9  |
+C-7       | AbM7#11 | C-7     | A-7 D7    |
+GM7       | Ab-7    | F-7     |     G7#5  |
+C-7       | %       | A-7     | D7        |
+GM7       | G7sus   | A/G     | EbM7#11/G |
+F7sus     | D/F     | F7sus   | E-7 A7    |
+Eb7       | A-7  D7 | B-7     | E7  D-7   |
+C#-7      | F#7     | DM7/E   | CM7/E     |
+DM7/E     | CM7/E   | DbM7/Eb | Bb13b9/Eb |
+AbM7#5/Eb | G7#5    |
+"""
+
+DONNA_LEE = """
+title: Donna Lee
+---
+AbM7   | F7       | Bb7  | %        |
+Bb-7   | Eb7      | AbM7 | Eb-7 Ab7 |
+DbM7   | Gb7      | AbM7 | F7       |
+Bb7    | %        | Bb-7 | Eb7      |
+AbM7   | F7       | Bb7  | %        |
+G07    | C7b9     | F-   | C7b9     |
+F-     | C7b9     | F-   | Bo7      |
+C-7 F7 | Bb-7 Eb7 | AbM7 | Bb-7 Eb7 |
+"""
+
+DONT_GET_AROUND_MUCH_ANYMORE = """
+title: Don't Get Around Much Anymore
+---
+{ CM7 . D-7 Ebo | E-7       | CM7 . B7 Bbo | A7      |
+  D-7           | G7        | [ C6         | G7     ]
+                              [ C6         | G-7 C7 ]|}
+  FM7           | Bb7       | CM7          | C7      |
+  FM7           | F#07 B7b9 | E-7   Ebo7   | D-7 G7  |
+  CM7 . D-7 Ebo | E-7       | CM7 . B7 Bbo | A7      |
+  D-7           | G7        | C6           | G7      |
+"""
+
+DOXY = """
+title: Doxy
+---
+Bb7 A7 | Ab7 G7 | C7 F7 | Bb7    |
+Bb7 A7 | Ab7 G7 | C7    | F7     |
+Bb7    | %      | Eb7   | Eo7    |
+Bb7 A7 | Ab7 G7 | C7 F7 | Bb7 F7 |
+"""
+
+EMBRACEABLE_YOU = """
+title: Embraceable You
+---
+GM7      | Bbo7       | A-7      | D7        |
+A-7      | C-6        | GM7      | F#07 B7b9 |
+E-  E-/D | C#07 F#7#5 | B-7      | E-7  A7   |
+DM7 B-7  | E-7  A7    | A-7      | D7        |
+GM7      | Bbo7       | A-7      | D7        |
+A-7      | C-6        | GM7      | D-7  G7   |
+CM7      | F#07 B7b9  | E-  E-/D | C#07 C-6  |
+B-7 E7   | A07  D7b9  | GM7      | A-7  D7   |
+"""
+
+EQUINOX = """
+title: Equinox
+---
+C#-7 | %   | %    | % |
+F#-7 | %   | C#-7 | % |
+A7   | G#7 | C#-7 | % |
+"""
+
 ### Pending Song ###
 
 GROOVIN_HIGH = """

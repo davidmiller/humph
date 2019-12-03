@@ -613,6 +613,83 @@ F#-7 | %   | C#-7 | % |
 A7   | G#7 | C#-7 | % |
 """
 
+ESP = """
+title: ESP
+---
+{ E7alt  | %      | FM7      | %        |
+  E7alt  | %      | Eb7#11   | %        |
+  D7alt  | Eb7#11 | E7alt    | FM7 EbM7 |
+[ D-7    | G7     | G-7      | Gb7     ]
+[ Db7#11 | G-7    | Db-7 Gb7 | FM7     ]|}
+"""
+
+FEE_FI_FO_FUM = """
+title: Fee-Fi-Fo-Fum
+---
+Eb7 D7#9 | G-7 AbM7 | BM7  D7  | D-7 G7 |
+Eb7 D7#9 | G-7 AbM7 | C7   F7  | Bb7    |
+Eb7      | %        | Bb7      | %      |
+Eb7      | %        | Bb-7 Eb7 | A-7 D7 |
+Eb7 D7#9 | G-7 AbM7 | BM7  D7  | D-7 G7 |
+Eb7 D7#9 | DbM7 C7  | BM7      | %      |
+"""
+
+FLY_ME_TO_THE_MOON = """
+title: Fly Me To The Moon
+---
+A-7 | D-7 | G7      | CM7      |
+FM7 | B07 | E7b9    | A-7 A7   |
+D-7 | G7  | CM7  F7 | E-7 A7   |
+D-7 | G7  | CM7     | B07 E7b9 |
+A-7 | D-7 | G7      | CM7      |
+FM7 | B07 | E7b9    | A-7 A7   |
+D-7 | G7  | E-7     | A7       |
+D-7 | G7  | CM7     | B07 E7b9 |
+"""
+
+FOOTPRINTS = """
+title: Footprints
+---
+C-11  | %     | %     | %     |
+C-11  | %     | %     | %     |
+F-11  | %     | %     | %     |
+C-11  | %     | %     | %     |
+F#011 | F7#11 | E7alt | A7alt |
+C-11  | %     | %     | %     |
+"""
+
+FOR_HEAENS_SAKE = """
+title: For Heaven's Sake
+---
+{ G07  C7b9 | A-7    D7b9  | G07  C7b9    | FM7 B7#11 |
+  Bb-7      | A-7    Abo7  | G-7  C7sus   | F6        |}
+  Eb-7 Ab7  | DbM7   Bb7b9 | Eb-7 Ab7     | DbM7      |
+  F-6  D07  | G07 C7 F-7 . | Bb-7 Bb-7/Ab | G-7 C7    |
+  G07  C7b9 | A-7    D7b9  | G07  C7b9    | FM7 B7#11 |
+  Bb-7      | A-7    Abo7  | G-7  C7sys   | F6        |
+"""
+
+FOUR = """
+title: Four
+---
+EbM7     | %       | Eb-7 | Ab7 |
+F-7      | %       | Ab-7 | Db7 |
+EbM7/G   | F#-7 B7 | F-7  | Bb7 |
+EbM7/G   | F#-7 B7 | F-7  | Bb7 |
+EbM7     | %       | Eb-7 | Ab7 |
+F-7      | %       | Ab-7 | Db7 |
+EbM7/G   | F#-7 B7 | F-7  | Bb7 |
+G-7 Gb-7 | F-7 Bb7 | EbM7 | %   |
+"""
+
+FREDDIE_FREELOADER = """
+title: Freddie Freeloader
+---
+Bb7 | %   | %   | % |
+Eb7 | %   | Bb7 | % |
+F7  | Eb7 | Ab7 | % |
+"""
+
 ### Pending Song ###
 
 GROOVIN_HIGH = """

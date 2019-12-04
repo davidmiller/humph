@@ -690,7 +690,38 @@ Eb7 | %   | Bb7 | % |
 F7  | Eb7 | Ab7 | % |
 """
 
-### Pending Song ###
+GEORGIA = """
+title: Georgia On My Mind
+---
+{ FM7       | E07 A7b9   |   D- D-/C | G/B . Bb-7 Eb7 |
+  A-7 D7    | G-7 C7     | [ A-7 D7  | G-7   C7#5    ]
+                           [ F6      | E07   A7b9    ]|}
+  D-  A7b9  | D-  Bb7    |   D- A7b9 | D-    G7/b     |
+  D-  A7b9  | D- . B0 E7 |   A-7 D7  | G-7   C7#5     |
+  FM7       | E07 A7b9   |   D- D-/C | G/B . Bb-7 Eb7 |
+  A-7 D7    | G-7 C7     |   F6      | G-7   C7       |
+"""
+
+GIANT_STEPS = """
+title: Giant Steps
+---
+BM7 D7  | GM7  Bb7 | EbM7 | A-7  D7  |
+GM7 Bb7 | EbM7 F#7 | BM7  | F-7  Bb7 |
+EbM7    | A-7  D7  | GM7  | C#-7 F#  |
+BM7     | F-7  Bb7 | EbM7 | C#-7 F#7 |
+"""
+
+GOOD_BAIT = """
+title: Good Bait
+---
+{ Bb6  G-7 | C-7  F7  | Bb6    G-7   |  C-7 F7     |
+  BbM7 Bb7 | EbM7 Ab7 | D- Db7 C- B7 |[ Bb6 F7alt ]
+                                      [ Bb6 Bb7#5 ]|}
+  Eb6  C-7 | F-7  Bb7 | Eb6    C-7   |  F-7 Bb7    |
+  EbM7 Eb7 | AbM7 Db7 | G- Gb7 F- E7 |  Eb6 F7     |
+  Bb6  G-7 | C-7  F7  | Bb6    G-7   |  C-7 F7     |
+  BbM7 Bb7 | EbM7 Ab7 | D- Db7 C- B7 |  Bb6 F7alt  |
+"""
 
 GROOVIN_HIGH = """
 title: Groovin' High
@@ -701,6 +732,92 @@ title: Groovin' High
 [ G-7 | F#-7 | F-7 | Bb7#9   ]
 [ F-7 | Db7  | Eb7 | F-7 Bb7 ]|}
 """
+
+HALF_NELSON = """
+title: Half Nelson
+---
+CM7  | %  | F-7      | Bb7       |
+CM7  | %  | B-7 E7   | Bb-7 Eb7  |
+AbM7 | %  | A-7      | D7        |
+D-7  | G7 | CM7 EbM7 | AbM7 DbM7 |
+"""
+
+HAVE_YOU_MET_MISS_JONES = """
+title: Have You Met Miss Jones
+---
+{ FM7     | D7       |   G-7  | C7     |
+  A-7     | D-7      | [ G-7  | C7    ]
+                       [ C-7  | F7    ]|}
+  BbM7    | Ab-7 Db7 |   GbM7 | E-7 A7 |
+  DM7     | Ab-7 Db7 |   GbM7 | G-7 C7 |
+  FM7 Bb7 | A-7  D7  |   G-7  | C7     |
+  A-7 D7  | G-7  C7  |   F6   | G-7 C7 |
+"""
+
+HERES_THAT_RAINY_DAY = """
+title: Here's That Rainy Day
+---
+G-7 G-M7/F# | F-6 Bb7 | EbM7    | AbM7   |
+A-7         | D7      | GM7     | D-7 G7 |
+C-7         | F7      | BbM7    | EbM7   |
+A-7         | D7      | GM7 E-7 | A-7 D7 |
+G-7 G-M7/F# | F-6 Bb7 | EbM7    | AbM7   |
+A-7         | D7      | GM7     | D-7 G7 |
+CM7         | A-7 D7  | B-7 E-7 | A7     |
+A-7         | D7      | G6  E-7 | A-7 D7 |
+"""
+
+HONEYSUCKLE_ROSE = """
+title: Honeysuckle Rose
+---
+{ G-7 C7   | G-7 C7 |   G-7 C7 | G-7 C7  |
+  F6  F7/A | Bb6 C7 | [ F6 Bb7 | A-7 D7 ]
+                      [ F6     | %      ]|}
+  F7       | %      |   Bb6    | %       |
+  G7       | %      |   C7     | %       |
+  G-7 C7   | G-7 C7 |   G-7 C7 | G-7 C7  |
+  F6  F7/A | Bb6 C7 |   F6 Bb7 | A-7 D7  |
+"""
+
+HOT_HOUSE = """
+title: Hot House
+---
+{ G07  | C7b9 | F-M7 | % |
+  D07  | G7b9 | CM   | % |}
+  C-7  | F7b9 | BbM7 | % |
+  Abb9 | %    | G7b9 | % |
+  G07  | C7b9 | F-M7 | % |
+  D07  | G7b9 | CM   | % |
+"""
+
+HOW_DEEP_IS_THE_OCEAN = """
+title: How Deep Is The Ocean
+---
+C-7     | D07 G7b9 | C-7     | A07 D7b9 |
+G-7     | A07 D7b9 | G-7 Gb7 | F-7 Bb7  |
+Eb7     | %        | Ab7     | %        |
+B7      | %        | Bb7     | D07 G7b9 |
+C-7     | D07 G7b9 | C-7     | A07 D7b9 |
+G-7     | A07 D7b9 | G-7 Gb7 | F-7 Bb7  |
+EbM7    | G-7 C7b9 | F-7     | Ab-7 Db7 |
+EbM7 G7 | C-7 F7   | F-7 Bb7 | Eb6 G7b9 |
+"""
+
+HOW_HIGH_THE_MOON = """
+title: How High The Moon
+---
+GM7    | %        | G-7 | C7       |
+FM7    | %        | F-7 | Bb7      |
+EbM7   | A07 D7b9 | G-7 | A07 D7b9 |
+GM7    | E-7      | A-7 | D7       |
+GM7    | %        | G-7 | C7       |
+FM7    | %        | F-7 | Bb7      |
+EbM7   | A07 D7b9 | GM7 | A-7 D7   |
+B-7 E7 | A-7 D7   | G6  | A-7 D7   |
+"""
+
+### Pending Song ###
+
 
 INDIANA = """
 title: Indiana

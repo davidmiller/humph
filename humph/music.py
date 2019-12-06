@@ -231,6 +231,7 @@ class LeadSheet(object):
 
         # Bar repeats with %
         raw_bar_strings = [b.strip() for b in text.split('|') if b]
+
         bar_strings = []
         for i, barstring in enumerate(raw_bar_strings):
             if barstring != '%':

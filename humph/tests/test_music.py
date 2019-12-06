@@ -59,6 +59,10 @@ class ChordTestCase(unittest.TestCase):
         chord = music.Chord('C7b9', 1)
         self.assertEqual('b9', chord.extension)
 
+    def test_enharmonic_root(self):
+        chord = music.Chord('Db7', 1)
+        self.assertEqual('C#', chord.enharmonic_root())
+
 
 class BarTestCase(unittest.TestCase):
 
@@ -119,3 +123,10 @@ class LeadSheetTestCase(unittest.TestCase):
         """
         sheet = music.LeadSheet(raw)
         self.assertEqual('Dominant Cycle', sheet.title)
+
+    # expands repeats
+    # repeat alterations
+    # expands repeats
+    # expands succesive repeats
+    # repr
+    # iter

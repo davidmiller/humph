@@ -816,6 +816,81 @@ EbM7   | A07 D7b9 | GM7 | A-7 D7   |
 B-7 E7 | A-7 D7   | G6  | A-7 D7   |
 """
 
+HOW_INSENSITIVE = """
+title: How Insensitive
+---
+D-   | %        | C#      | %      |
+C-6  | %        | G7/B    | %      |
+BbM7 | %        | EBM7#11 | %      |
+E07  | A7b9     | D-      | D- Db7 |
+C-6  | %        | Bo7     | %      |
+BbM7 | E07 A7b9 | D-      | D- Db7 |
+C-7  | F7       | B-7     | E7b9   |
+BbM7 | A7b9     | D-      | %      |
+"""
+
+I_CANT_GET_STARTED = """
+title: I Can't Get Started
+---
+{ CM7 A-7  | D-7 G7   |   B-7 E7 Bb-7 Eb7 | A-7 D7 Ab-7 Db-7 |
+  CM7 A-7  | D-7 G7b9 | [ E7     A7       | D7     G7       ]
+                        [ CM7             | %               ]|}
+  E-7 A7   | E-7 A7   |   DM7             | %                |
+  D-7 G7   | D-7 G7   |   E-7    Ebo7     | D-7    Gsus      |
+  CM7 A-7  | D-7 G7   |   B-7 E7 Bb-7 Eb7 | A-7 D7 Ab-7 Db-7 |
+  CM7 A7#5 | D-7 G7   |   C6     A7       | D7     G7        |
+"""
+
+I_COULD_WRITE_A_BOOK = """
+title: I Could Write A Book
+---
+CM7 A-7 | D-7 G7   | CM7  A-7  | D-7 G7   |
+CM7 D-7 | E-7 A7#9 | D-7       | B07 E7b9 |
+A-7     | Ab7 G7   | F#07 B7b9 | E-7 A7   |
+A-7     | D7       | D-7       | G7       |
+CM7 A-7 | D-7 G7   | CM7  A-7  | D-7 G7   |
+CM7 D-7 | E-7 A7#9 | D-7       | B07 E7b9 |
+A-7     | Ab7      | G07  C7b9 | FM7 Bb7  |
+E-7 A7  | D-7 G7   | C6        | D-7 G7   |
+"""
+
+I_GOT_RHYTHM = """
+title: I Got Rhythm
+---
+{ Bb6 G-7   | C-7 F7  | D-7   G-7 | C-7 F7    |
+  Bb7 Bb7/D | Eb7 Eo7 | Bb6/F F7  | [ Bb6 F7 ]
+                                    [ Bb6    ]|}
+  D7        | %       | G7        | %         |
+  C7        | %       | F7        | %         |
+  Bb6 G-7   | C-7 F7  | D-7   G-7 | C-7 F7    |
+  Bb7 Bb7/D | Eb7 Eo7 | Bb6/F F7  | Bb6 F7    |
+"""
+
+I_HEAR_A_RHAPSODY = """
+title: I Hear A Rhapsody
+---
+{ C-7   | F-7 Bb7  | EbM7 Ab  |   G07 C7b9  |
+  F07   | Bb7b9    | EvM7     | [ D07 G9#5 ]
+                                [ A07 D7b9 ]|}
+  G-7   | A07 D7b9 | G-7      |   C-7 F7    |
+  BbM7  | F-7      | D07 G7b9 |   G9#5      |
+  C-7   | F-7 Bb7  | EbM7 Ab  |   G07 C7b9  |
+  F07   | Bb7b9    | EvM7     |   D07 G9#5  |
+"""
+
+I_LOVE_YOU = """
+title: I Love You
+---
+G07 | C7b9   | FM7 | %        |
+G-7 | C7     | FM7 | %        |
+G07 | C7b9   | FM7 | B-7 E7   |
+AM7 | B-7 E7 | AM7 | %        |
+G-7 | C7     | FM7 | %        |
+A07 | D7b9   | G-7 | C7       |
+G07 | C7b9   | FM7 | A07 D7b9 |
+G7  | C7     | F6  | %        |
+"""
+
 ### Pending Song ###
 
 

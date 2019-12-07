@@ -891,6 +891,80 @@ G07 | C7b9   | FM7 | A07 D7b9 |
 G7  | C7     | F6  | %        |
 """
 
+I_MEAN_YOU = """
+title: I Mean You
+---
+Eb7 | % | % | % |
+
+{ F6  | %  | Db7 | D7 |
+  G-7 | C7 | F6  | %  | }
+  Eb7 | %  | F6  | %  |
+  Db7 | %  | Gb7 | %  |
+  F6  | %  | Db7 | D7 |
+  G-7 | C7 | F6  | %  |
+"""
+
+I_REMEMBER_YOU = """
+title: I Remember You
+---
+{ FM7    | B-7  E7  |   FM7    | C-7 F7  |
+  BbM7   | Bb-7 Eb7 | [ A-7 D7 | G-7 C7 ]
+                      [ FM7    | C-7 F7 ]|}
+  BbM7   | E-7  A7  |   DM7    | E-7 A7  |
+  DM7    | D-7 G7   |   CM7    | G-7 C7  |
+  FM7    | B-7  E7  |   FM7    | C-7 F7  |
+  BbM7   | Bb-7 Eb7 |   A-7 D7 | B-7 E7  |
+  A-7 D7 | G-7  C7  |   F6     | G-7 C7  |
+"""
+
+I_SHOULD_CARE = """
+title: I Should Care
+---
+D-7  G7   | E-7 A7    | D-7 G7 | CM7     |
+E07       | A7        | D-7    | F-7 Bb7 |
+CM7       | Bb07 E7b9 | G-7 C7 | FM7     |
+B07  E7b9 | A-7       | A-7 D7 | D-7 G7  |
+F#07 B7b9 | E-7 A7    | D-7 G7 | CM7     |
+E07       | A7        | D-7    | F-7 Bb7 |
+CM7       | Bb07 E7b9 | A-7    | D7      |
+D-7       | G7        | C6  F7 | E-7 A7  |
+"""
+
+I_THOUGHT_ABOUT_YOU = """
+title: I Thought About You
+---
+FM7       | A7 D7b13 | G7  Ab7 | G7         |
+G-7 G-7/F | E07 A7b9 | D-7 Db7 | C-7 F7     |
+BbM7      | Bb-7 Eb7 | FM7 C7  | FM7        |
+B07 E7b9  | B07 E7b9 | A-7 Ab7 | G-7 C7     |
+FM7       | A7 D7b13 | G7  Ab7 | G7         |
+G-7 G-7/F | E07 A7b9 | D-7 Db7 | C-7 F7     |
+BbM7      | Bb-7 Eb7 | FM7 D-7 | B07 Bb7#11 |
+A-7 D7    | G-7  C7  | F6      | G-7 C7     |
+"""
+
+I_WISH_I_KNEW = """
+title: I Wish I Knew How It Would Feel To Be Free
+---
+F   A7     | D-  C-7   | Bb  C7sus | F    |
+F . Bb F/A | F . C/E F | C/E G7    | C7   |
+F   A7     | D-  C-7   | Bb  C7sus | F Bo |
+F/C C#o    | D-  Bo    | F/C C7sus | F    |
+"""
+
+IF_I_WERE_A_BELL = """
+title: If I Were A Bell
+---
+G7        | C7      | FM7      | %      |
+A07       | D7      | G7       | C7     |
+F6  F7/A  | Bb6 C7  | F6       | E07 A7 |
+D-7 D-7/C | B07 E7  | AM7      | G-7 C7 |
+G7        | C7      | FM7      | %      |
+A07       | D7      | G7       | C7     |
+F6  F7/A  | Bb6 Bo6 | F6/C Bb7 | A07 D7 |
+G-7       | C7      | F6       | A07 D7 |
+"""
+
 ### Pending Song ###
 
 

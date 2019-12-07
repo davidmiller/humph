@@ -8,7 +8,6 @@ from humph.utils import perc
 
 # TODO:
 #
-# Minor 2-5
 # 6-2-5-1
 # I7 - IV7 (Blues movement)
 # II - V - 17 (1dominant rather than minor )
@@ -57,6 +56,13 @@ class Finder(object):
         """
         pass
 
+    def sequences_of(self, length):
+        """
+        return sequences of chords in SELF.LEADSHEET of length LENGTH
+        """
+        chords = [c for bar in self.leadsheet for c in bar]
+        return sequences(chords, length)
+
     def run(self):
         """
         Run the finder, and return a FinderSummary of
@@ -85,9 +91,7 @@ class Find25s(Finder):
         count = 0
         instances = []
 
-        chords = [c for bar in self.leadsheet for c in bar]
-
-        chord_sequences = sequences(chords, 2)
+        chord_sequences = self.sequences_of(2)
         for sequence in chord_sequences:
             if sequence[0].minor:
                 if sequence[1].dominant:
@@ -112,9 +116,7 @@ class Find51s(Finder):
         count = 0
         instances = []
 
-        chords = [c for bar in self.leadsheet for c in bar]
-
-        chord_sequences = sequences(chords, 2)
+        chord_sequences = self.sequences_of(2)
         for sequence in chord_sequences:
             if sequence[0].dominant:
                 if sequence[1].major:
@@ -139,9 +141,7 @@ class Find251s(Finder):
         count = 0
         instances = []
 
-        chords = [c for bar in self.leadsheet for c in bar]
-
-        chord_sequences = sequences(chords, 3)
+        chord_sequences = self.sequences_of(3)
 
         for sequence in chord_sequences:
             if sequence[0].minor:
@@ -172,9 +172,7 @@ class Find1625s(Finder):
         count = 0
         instances = []
 
-        chords = [c for bar in self.leadsheet for c in bar]
-
-        chord_sequences = sequences(chords, 4)
+        chord_sequences = self.sequences_of(4)
 
         for sequence in chord_sequences:
             if sequence[0].major:
@@ -209,9 +207,7 @@ class Find3625s(Finder):
         count = 0
         instances = []
 
-        chords = [c for bar in self.leadsheet for c in bar]
-
-        chord_sequences = sequences(chords, 4)
+        chord_sequences = self.sequences_of(4)
 
         for sequence in chord_sequences:
             if sequence[0].minor:
@@ -234,7 +230,7 @@ class Find3625s(Finder):
 
 class FindMinor251s(Finder):
     """
-    Find occurrences of the minor ii-V progression in this lead sheet
+    Find occurrences of the minor ii-V-i progression in this lead sheet
     """
     name = 'minor 2-5-1s'
 
@@ -245,9 +241,7 @@ class FindMinor251s(Finder):
         count = 0
         instances = []
 
-        chords = [c for bar in self.leadsheet for c in bar]
-
-        chord_sequences = sequences(chords, 3)
+        chord_sequences = self.sequences_of(3)
 
         for sequence in chord_sequences:
             if sequence[0].half_diminished:
@@ -265,6 +259,34 @@ class FindMinor251s(Finder):
         return count, instances
 
 
+class FindMinor25s(Finder):
+    """
+    Find occurrences of the minor ii-V progression in this lead sheet
+    """
+    name = 'minor 2-5s'
+
+    def find(self):
+        """
+        Returns count, instanecs
+        """
+        count = 0
+        instances = []
+
+        chord_sequences = self.sequences_of(2)
+
+        for sequence in chord_sequences:
+            if sequence[0].half_diminished:
+                if sequence[1].dominant:
+
+                        interv = interval(sequence[0].root, sequence[1].root)
+
+                        if interv == P4:
+                            count += 1
+                            instances.append(sequence)
+
+        return count, instances
+
+
 class FindMajorParallelMinor(Finder):
     """
     Find occurrences of the Major to Parrallel Minor cadence
@@ -278,9 +300,7 @@ class FindMajorParallelMinor(Finder):
         count = 0
         instances = []
 
-        chords = [c for bar in self.leadsheet for c in bar]
-
-        chord_sequences = sequences(chords, 2)
+        chord_sequences = self.sequences_of(2)
 
         for sequence in chord_sequences:
             if sequence[0].major:
@@ -292,6 +312,41 @@ class FindMajorParallelMinor(Finder):
         return count, instances
 
 
+class FindSearsRoebuckBridges(Finder):
+    """
+    Find occurrences of the Sears Roebuck bridge
+    """
+    name = "Sears Roebuck"
+
+    def find(self):
+        """
+        returns count, instances
+        """
+        count = 0
+        instances = []
+        chord_sequences = self.sequences_of(8)
+        for sequence in chord_sequences:
+            if [c for c in sequence if not c.dominant]:
+                continue
+
+            # Are they pairs of 2 bar sequences
+            roots = [s.root for s in sequence]
+            pairs = [(0,1), (2,3), (4,5), (6,7)]
+            if any([p for p in pairs if roots[p[0]] != roots[p[1]]]):
+                continue
+
+            # Do they move in fourths?
+            interval1 = interval(sequence[0].root, sequence[2].root)
+            interval2 = interval(sequence[2].root, sequence[4].root)
+            interval3 = interval(sequence[4].root, sequence[6].root)
+
+            if interval1 == P4 and interval2 == P4 and interval3 == P4:
+                count += 1
+                instances.append(sequence)
+
+        return count, instances
+
+
 FINDERS = [
     Find251s,
     Find25s,
@@ -299,5 +354,7 @@ FINDERS = [
     Find1625s,
     Find3625s,
     FindMinor251s,
+    FindMinor25s,
     FindMajorParallelMinor,
+    FindSearsRoebuckBridges,
 ]

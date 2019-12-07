@@ -31,6 +31,30 @@ class ChordTestCase(unittest.TestCase):
         chord = music.Chord('C-', 1)
         self.assertEqual('C-', chord.__repr__())
 
+    def test_root(self):
+        chord = music.Chord('F', 1)
+        self.assertEqual('F', chord.root)
+
+    def test_sharp_root(self):
+        chord = music.Chord('F#', 1)
+        self.assertEqual('F#', chord.root)
+
+    def test_flat_root(self):
+        chord = music.Chord('Eb', 1)
+        self.assertEqual('Eb', chord.root)
+
+    def test_bass_note(self):
+        chord = music.Chord('C/E', 1)
+        self.assertEqual('E', chord.bass_note)
+
+    def test_bass_note_seventh(self):
+        chord = music.Chord('C7/E', 1)
+        self.assertEqual('E', chord.bass_note)
+
+    def test_bass_note_seventh_chord_with_extensions(self):
+        chord = music.Chord('C7b9#11/E', 1)
+        self.assertEqual('E', chord.bass_note)
+
     def test_major(self):
         chord = music.Chord('CM7', 1)
         self.assertTrue(chord.major)
@@ -124,9 +148,27 @@ class LeadSheetTestCase(unittest.TestCase):
         sheet = music.LeadSheet(raw)
         self.assertEqual('Dominant Cycle', sheet.title)
 
-    # expands repeats
-    # repeat alterations
-    # expands repeats
-    # expands succesive repeats
+    def test_expands_section_repeats(self):
+        raw = "{ D-7 | G7 | CM7 | % |}"
+        sheet = music.LeadSheet(raw)
+        self.assertEqual(8, len(list([k for k in sheet])))
+
+    def test_expands_repeats_with_alternate_blocks(self):
+        raw = "{ D-7 | G7 | CM7 | [ % ][ E-7 A7 ]|}"
+        sheet = music.LeadSheet(raw)
+        self.assertEqual('C', sheet.bars[3].chords[0].root)
+        self.assertEqual('E', sheet.bars[7].chords[0].root)
+        self.assertEqual('A', sheet.bars[7].chords[1].root)
+
+    def test_expands_repeats(self):
+        raw = "B-7 | % |"
+        sheet = music.LeadSheet(raw)
+        self.assertEqual('B', sheet.bars[1].chords[0].root)
+
+    def test_expands_successive_repeats(self):
+        raw = "A-7 | % | % |"
+        sheet = music.LeadSheet(raw)
+        self.assertEqual('A', sheet.bars[2].chords[0].root)
+
     # repr
     # iter

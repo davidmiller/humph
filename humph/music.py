@@ -84,6 +84,7 @@ class Chord(object):
         self.root            = None
         self.duration        = duration #Beats
         self.extensions      = None
+        self.bass_note       = None
 
         # Qualities
         self.major           = False
@@ -103,11 +104,22 @@ class Chord(object):
         """
         ch = self._chord_string
 
+        # Deal with bass notes first to parse the rest as if it
+        # wasn't there
+        if '/' in ch:
+            ch, bass_note = ch.split('/')
+            self.bass_note = bass_note
+
+
+        # Establish the root of the chord
         root_length = 1
 
-        if ch[1] in ['b', '#']:
+        if len(ch) > 1 and ch[1] in ['b', '#']:
             root_length = 2
         self.root = ch[0:root_length]
+
+
+        # Set the correct extension property (.major/.minor etc)
         quality = ch[root_length:root_length+1]
         extensions = ch[root_length+1:]
 
@@ -130,6 +142,9 @@ class Chord(object):
         if quality == 'o':
             self.diminished = True
 
+        # Easy access for extensions
+        # Have to deal with all the qualities as they may
+        # alter the original extension string e.g. F-M7#5
         if extensions:
             self.extension = extensions
 
@@ -214,6 +229,7 @@ class LeadSheet(object):
             if '}' in text:
                 start = text.index('{')
                 end   = text.index('}')
+
                 text  = text[0:start] + text[start+1:end] + text[start+1:end] + text[end+1:]
 
         # Section alterations with [ ]

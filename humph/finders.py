@@ -3,7 +3,7 @@ Finders = analysing sequences
 """
 import itertools
 
-from humph.music import interval, P1, m2, M2, m3, M3, P4, TT, P5, m6, M6, m7, M7, P8
+from humph.music import Chord, interval, P1, m2, M2, m3, M3, P4, TT, P5, m6, M6, m7, M7, P8
 from humph.utils import perc
 
 # TODO:
@@ -59,9 +59,29 @@ class Finder(object):
     def sequences_of(self, length):
         """
         return sequences of chords in SELF.LEADSHEET of length LENGTH
+
+        - Turn the leadsheet into a sequence that includes the turnaround
+        - Drop duplicate chords e.g. a two D-7 chords for two bars in 4/4
+          becomes one D-7 chord of duration 8 beats
         """
         chords = [c for bar in self.leadsheet for c in bar]
-        return sequences(chords, length)
+        chords += chords[:length-1]
+
+        collapsed = []
+
+        for chord in chords:
+
+            if len(collapsed) == 0:
+                collapsed.append(chord)
+                continue
+
+            if chord._chord_string == collapsed[-1]._chord_string:
+                collapsed[-1] = Chord(chord._chord_string, chord.duration+collapsed[-1].duration)
+                continue
+
+            collapsed.append(chord)
+
+        return sequences(collapsed, length)
 
     def run(self):
         """
@@ -324,21 +344,15 @@ class FindSearsRoebuckBridges(Finder):
         """
         count = 0
         instances = []
-        chord_sequences = self.sequences_of(8)
+        chord_sequences = self.sequences_of(4)
         for sequence in chord_sequences:
             if [c for c in sequence if not c.dominant]:
                 continue
 
-            # Are they pairs of 2 bar sequences
-            roots = [s.root for s in sequence]
-            pairs = [(0,1), (2,3), (4,5), (6,7)]
-            if any([p for p in pairs if roots[p[0]] != roots[p[1]]]):
-                continue
-
             # Do they move in fourths?
-            interval1 = interval(sequence[0].root, sequence[2].root)
-            interval2 = interval(sequence[2].root, sequence[4].root)
-            interval3 = interval(sequence[4].root, sequence[6].root)
+            interval1 = interval(sequence[0].root, sequence[1].root)
+            interval2 = interval(sequence[1].root, sequence[2].root)
+            interval3 = interval(sequence[2].root, sequence[3].root)
 
             if interval1 == P4 and interval2 == P4 and interval3 == P4:
                 count += 1

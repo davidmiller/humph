@@ -37,3 +37,11 @@ class Repertiore(object):
                 filtered.append(s)
 
         return filtered
+
+
+    def rank_for_finder(self, finder):
+        """
+        Given a FINDER, rank all songs in the repertoire by the
+        % they are comprised sequecnes matching FINDER
+        """
+        return []

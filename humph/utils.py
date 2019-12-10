@@ -14,6 +14,6 @@ def chunks(l, n):
 
 def perc(part, whole):
     """
-    Return PART as a percentage of WHOLE to the nearest integer
+    Return PART as a percentage of WHOLE
     """
-    return int(100 * float(part)/float(whole))
+    return 100 * float(part)/float(whole)

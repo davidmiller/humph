@@ -10,7 +10,7 @@ from humph.utils import perc
 
 def analyse(sheet=None):
     """
-    Run selected finders for sheets
+    Run all finders for either one lead sheet passed in, or all lead sheets
     """
     rep = Repertiore()
     rep.load()
@@ -28,21 +28,38 @@ def analyse(sheet=None):
 
         corpus_length += leadsheet.beats
 
+        leadsheet_summaries = []
+
         for finder in FINDERS:
             f = finder(leadsheet)
             summary = f.run()
+            leadsheet_summaries.append(summary)
             finder_length[summary.name] += summary.duration
-            print(summary)
+
+        for summary in reversed(sorted(leadsheet_summaries, key=lambda x: x.percentage)):
+            if summary.count > 0:
+                print(summary)
 
     if len(sheets) == 1:
         return
 
-    # Global summary
+    # Global Finder Summary
     print(30*'^')
     print(f"{len(sheets)} songs:")
-    for name in finder_length:
-        p = perc(finder_length[name], corpus_length)
-        print(f"{name}: {p}%")
+    results = [(name, perc(finder_length[name], corpus_length)) for name in finder_length]
+    for name, p in sorted(results, key=lambda x: -x[1]):
+        print(f"{name}: {p:.2f}%")
+
+
+def rank_for_finder():
+    from humph.finders import Find25s as finder
+
+    rep = Repertiore()
+    rep.load()
+
+    songs = rep.rank_for_finder(finder)
+    for song in songs:
+        print(song)
 
 
 def main():

@@ -44,4 +44,5 @@ class Repertiore(object):
         Given a FINDER, rank all songs in the repertoire by the
         % they are comprised sequecnes matching FINDER
         """
-        return []
+        top = sorted([finder(s).run() for s in self.songs], key=lambda x: -x.percentage)[:10]
+        return [t for t in top if t.percentage > 0]

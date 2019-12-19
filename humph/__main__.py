@@ -45,24 +45,27 @@ def analyse(sheet=None):
 
     # Global Finder Summary
     print(30*'^')
-    print(f"{len(sheets)} songs:")
+    print(f"{len(sheets)} songs ({corpus_length:,} beats):".rjust(26))
     results = [(name, perc(finder_length[name], corpus_length)) for name in finder_length]
     for name, p in sorted(results, key=lambda x: -x[1]):
-        print(f"{name}: {p:.2f}%")
+        print(f"{name.rjust(25)}: {p:.2f}%")
 
 
 def rank_for_finder():
-    from humph.finders import Find25s as finder
-
     rep = Repertiore()
     rep.load()
 
-    songs = rep.rank_for_finder(finder)
-    for song in songs:
-        print(song)
+    for finder in FINDERS:
+        songs = rep.rank_for_finder(finder)
+
+        print(f"\n\nTop 10 songs for {finder.name}")
+        for summary in songs:
+            print(f"{summary.leadsheet.title.rjust(25)}: {summary.percentage:.1f}%")
 
 
 def main():
+    # rank_for_finder()
+    # return
     if len(sys.argv) > 1:
         analyse(sheet=" ".join(sys.argv[1:]))
     else:

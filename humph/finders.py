@@ -8,11 +8,10 @@ from humph.utils import perc
 
 # TODO:
 #
-# 6-2-5-1
-# I7 - IV7 (Blues movement)
 # II - V - 17 (1dominant rather than minor )
 # I7 - VI - II - V (dominant 1 - maybe incorporate into 1-6-2-5?)
 # Dominant up half step and diminished
+# What happens after the tonic ?
 
 
 def sequences(iterable, n):
@@ -179,6 +178,41 @@ class Find251s(Finder):
         return count, instances
 
 
+
+
+class Find25I7s(Finder):
+    """
+    Find occurrences of the ii-V-I7 progression in this lead sheet
+    """
+    name = 'ii-V-I7'
+
+    def find(self):
+        """
+        Returns count, instanecs
+        """
+        count = 0
+        instances = []
+
+        chord_sequences = self.sequences_of(3)
+
+        for sequence in chord_sequences:
+            if sequence[0].minor:
+                if sequence[1].dominant:
+                    if sequence[2].dominant: # It's minor, dominant seventh, dominant seventh, check intervals
+
+                        interval1 = interval(sequence[0].root, sequence[1].root)
+                        interval2 = interval(sequence[1].root, sequence[2].root)
+
+                        if interval1 == P4:
+                            if interval2 == P4:
+                                count += 1
+                                instances.append(sequence)
+
+        return count, instances
+
+
+
+
 class Find1625s(Finder):
     """
     Find occurrences of the I-VI-II-V progression in this lead sheet
@@ -234,6 +268,40 @@ class Find3625s(Finder):
                 if sequence[1].minor or sequence[1].dominant:
                     if sequence[2].minor: # It's major, minor, minor, dominant, check intervals
                         if sequence[3].dominant:
+
+                            interval1 = interval(sequence[0].root, sequence[1].root)
+                            interval2 = interval(sequence[1].root, sequence[2].root)
+                            interval3 = interval(sequence[2].root, sequence[3].root)
+
+                            if interval1 == P4:
+                                if interval2 == P4:
+                                    if interval3 == P4:
+                                        count += 1
+                                        instances.append(sequence)
+
+        return count, instances
+
+
+class Find6251s(Finder):
+    """
+    Find occurrences of the VI-II-V-I progression in this lead sheet
+    """
+    name = '6-2-5-1s'
+
+    def find(self):
+        """
+        Returns count, instanecs
+        """
+        count = 0
+        instances = []
+
+        chord_sequences = self.sequences_of(4)
+
+        for sequence in chord_sequences:
+            if sequence[0].minor:
+                if sequence[1].minor:
+                    if sequence[2].dominant: # It's major, minor, minor, dominant, check intervals
+                        if sequence[3].major:
 
                             interval1 = interval(sequence[0].root, sequence[1].root)
                             interval2 = interval(sequence[1].root, sequence[2].root)
@@ -361,14 +429,39 @@ class FindSearsRoebuckBridges(Finder):
         return count, instances
 
 
+class FindI7IV7Movements(Finder):
+    """
+    Find occurrences of I7 - IV7 ("Blues" movement, dominants in fourths)
+    """
+    name = "I7-IV7"
+
+    def find(self):
+        """
+        Returns count, instances
+        """
+        count     = 0
+        instances = []
+        chord_sequences = self.sequences_of(2)
+        for sequence in chord_sequences:
+            if sequence[0].dominant and sequence[1].dominant:
+                if interval(sequence[0].root, sequence[1].root) == P4:
+                    count += 1
+                    instances.append(sequence)
+
+        return count, instances
+
+
 FINDERS = [
     Find251s,
+    Find25I7s,
     Find25s,
     Find51s,
     Find1625s,
     Find3625s,
+    Find6251s,
     FindMinor251s,
     FindMinor25s,
     FindMajorParallelMinor,
     FindSearsRoebuckBridges,
+    FindI7IV7Movements,
 ]

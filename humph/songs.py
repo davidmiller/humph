@@ -145,7 +145,7 @@ title: Angel Eyes
 ANTHROPOLOGY = """
 title: Anthropology
 ---
-{ BbM7 G7  | C-7 F7  | D-7 G7   | C-7 F7  |
+{ BbM7 G7  | C-7 F7  |   D-7 G7 | C-7 F7  |
   F-7  Bb7 | Eb7 Ab7 | [ D-7 G7 | C-7 F7 ]
                        [ C-7 F7 | Bb6    ]|}
   D7       | %       | G7       | %       |
@@ -1112,7 +1112,7 @@ CM7       | F7        | GM7 B7b9 | E-7  Bbo7   |
 D7/A Abo7 | D7/A D7   | G6  E7   | A-7  D7     |
 """
 
-### It Might As Well Be Spring
+### TODO:  It Might As Well Be Spring
 
 ITS_YOU_OR_NO_ONE = """
 title: It's You Or No One
@@ -1413,7 +1413,492 @@ F-7 | %      | C-7 | % |
 Ab7 | Gb7b13 | C-7 | % |
 """
 
-### Pending Song ###
+MY_FAVOURITE_THINGS = """
+title: My Favourite Things
+timesig: 3/4
+---
+E-7 | F#-7 | E-7  | F#-7 |
+CM7 | %    | %    | %    |
+A-7 | D7   | GM7  | CM7  |
+GM7 | CM7  | F07  | B7b9 |
+E-7 | F#-7 | E-7  | F#-7 |
+CM7 | %    | %    | %    |
+A-7 | D7   | GM7  | CM7  |
+GM7 | CM7  | F£07 | B7b9 |
+EM7 | F#-7 | EM7  | F#-7 |
+AM7 | %    | %    | %    |
+A-7 | D7   | GM7  | CM7  |
+GM7 | CM7  | F#07 | B7b9 |
+E-7 | %    | F#07 | B7b9 |
+E-7 | %    | CM7  | %    |
+CM7 | %    | A7   | %    |
+GM7 | CM7  | %    | D7   |
+G6  | CM7  | G6   | CM7  |
+GM7 | CM7  | F#07 | B7b9 |
+"""
+
+MY_FOOLISH_HEART = """
+title: My Foolish Heart
+---
+BbM7 EbM7 | D-7 G7   | C-7        | E-7 A7b9  |
+BbM7 D7#9 | G-7      | C-7        | C-7 F7b9  |
+BbM7      | F-7 Bb7  | Eb6        | A07 D7b9  |
+G-7 D7b13 | G-7 C7   | C-7 G7     | C-7 F7    |
+BbM7 EbM7 | D-7 G7   | C-7        | E-7 A7b9  |
+BbM7 D7b9 | G-7      | C-7 C-7/Bb | A07 D7b9  |
+G-7       | Eb-7 Ab7 | BbM7 EbM7  | Ab7 G7    |
+C-7 G7    | C7   F7  | BbM7 G7    | C-7 F7sus |
+"""
+
+MY_FUNNY_VALENTINE = """
+title: My Funny Valentine
+---
+C-6       | D07    G7b9    | C-7      | F7       |
+AbM7      | F-7            | D07      | G7b9     |
+C-6       | D07    G7b9    | C-7      | F7       |
+AbM 7     | F-7            | F07      | Bb7      |
+EbM7 F-7  | G-7    F-7     | EbM7 F-7 | G-7 F-7  |
+EbM7 G7b9 | C-7 B7 Bb-7 A7 | AbM7     | D07 G7b9 |
+C-6       | D07    G7b9    | C-7      | F7       |
+AbM7      | D07    G7b9    | C-7  B7  | Bb-7 Eb7 |
+AbM7      | F-7    Bb7     | Eb6      | D07 G7b9 |
+"""
+
+MY_LITTLE_SUEDE_SHOES = """
+title: My Little Suede Shoes
+---
+{ F-7 Bb7 | EbM7   | F-7 Bb7 | EbM7 |
+  F-7 Bb7 | G-7 C7 | F-7 Bb7 | EbM7 |}
+  AbM7    | G-7 C7 | F-7 Bb7 | EbM7 |
+  AbM7    | G-7 C7 | F-7 Bb7 | EbM7 |
+  F-7 Bb7 | EbM7   | F-7 Bb7 | EbM7 |
+  F-7 Bb7 | G-7 C7 | F-7 Bb7 | EbM7 |
+"""
+
+MY_ONE_AND_ONLY_LOVE = """
+title: My One And Only Love
+---
+{ CM7   A-7    | D-7 . G7 G#o | A-7 FM7 |  E-7 A7         |
+  D-7 . G7 G#o | A-7   D7     | D-7 G7  | [E-7 A7 D-7 G7]
+                                          [C6 .   F#0 B7] |}
+  E-7          | F#07  B7b9   | E-7     |  F#07   B7b9    |
+  E-    E-M7   | E07   A7     | D-7 A7  |  D-7    G7      |
+  CM7   A-7    | D-7 . G7 G#o | A-7 FM7 |  E-7    A7      |
+  D-7 . G7 G#o | A-7   D7     | D-7 G7  |  C6     G7      |
+"""
+
+MY_ROMANCE = """
+title: My Romance
+---
+CM7  FM7  | E-7 Ebo7  | D-7 G7   | CM7 E7  |
+A-7  E7   | A-7 A7    | D-7 G7   | CM7 C7  |
+FM7  Bb7  | CM7 C7    | FM7 Bb7  | CM7     |
+F#07 B7b9 | E-7 Bb7   | A-7 D7   | D-7 G7  |
+CM7  FM7  | E-7 Ebo7  | D-7 G7   | CM7 E7  |
+A-7  E7   | A-7 A7    | D-7 G7   | CM7 C7  |
+FM7  A7   | D-7 D-7/C | B07 E7b9 | A-7 Ab7 |
+CM7/G A-7 | D-7 G7    | C6  A-7  | D-7 G7  |
+"""
+
+MY_SHINING_HOUR = """
+title: My Shining Hour
+---
+EbM7 | C-7 | F-7        | Bb7      |
+EbM7 | C-7 | D07        | G7b9     |
+C-   | %   | D07        | G7b9     |
+C-7  | F7  | F-7        | Bb7      |
+Bb-7 | Eb7 | AbM7       | %        |
+Ab-7 | Db7 | Eb6/G Gbo7 | F-7 Bb7  |
+EbM7 | %   | EbM7  F-7  | G-7 Gbo7 |
+F-7  | Bb7 | Eb6        | F-7 Bb7  |
+"""
+
+NARDIS = """
+title: Nardis
+---
+{ E-7 | FM7 | B7  | CM7 |
+  A-7 | FM7 | EM7 | E-7 |}
+  A-7 | FM7 | A-7 | FM7 |
+  D-7 | G7  | CM7 | FM7 |
+  E-7 | FM7 | B7  | CM7 |
+  A-7 | FM7 | EM7 | E-7 |
+"""
+
+### TODO: Nica's Dream
+
+NIGHT_AND_DAY = """
+title: Night And Day
+---
+{ AbM7 | G7  | CM7 | %    |
+  AbM7 | G7  | CM7 | %    |
+  F#07 | F-7 | E-7 | Ebo7 |
+  D-7  | G7  | CM7 | [ % ]
+                     [Bb7]|}
+  EbM7 | %   | CM7 | %    |
+  EbM7 | %   | CM7 | %    |
+  F#07 | F-7 | E-7 | Ebo7 |
+  D-7  | G7  | C6  | %    |
+"""
+
+NIGHT_IN_TUNISIA = """
+title: Night In Tunisia
+---
+{ Eb7 | D-   | Eb7      | D-       |
+  Eb7 | D-   | E07 A7b0 | D-       |}
+  A-7 | D7b9 | G-7      | %        |
+  G07 | C7b9 | FM7      | E07 A7b9 |
+  Eb7 | D-   | Eb7      | D-       |
+  Eb7 | D-   | E07 A7b0 | D-       |
+"""
+
+NOWS_THE_TIME = """
+title: Now's The Time
+---
+F7  | Bb7 | F7    | C-7 F7 |
+Bb7 | Bo7 | F7    | A-7 D7 |
+G-7 | C7  | F7 D7 | G-7 C7 |
+"""
+
+OLEO = """
+title: Oleo
+---
+{ BbM7 G7  | C-7 F7  |   D-7 G7 | C-7 F7  |
+  F-7  Bb7 | Eb7 Ab7 | [ D-7 G7 | C-7 F7 ]
+                       [ C-7 F7 | Bb6    ]|}
+  D7       | %       | G7       | %       |
+  C7       | %       | F7       | %       |
+  BbM7 G7  | C-7 F7  | D-7 G7   | C-7 F7  |
+  F-7  Bb7 | Eb7 Ab7 | C-7 F7   | Bb6     |
+"""
+
+ON_GREEN_DOLPHIN_STREET = """
+title: On Green Dolphin Street
+---
+EBM7       | %        | Eb-7       | %        |
+F7/Eb      | EM7/Eb   | EbM7       | C7       |
+F-7        | Bb7alt   | EbM7       | %        |
+Ab-7       | Db7alt   | GbM7       | F-7 Bb7  |
+EBM7       | %        | Eb-7       | %        |
+F7/Eb      | EM7/Eb   | EbM7       | C7       |
+F-7 F-7/Eb | D07 G7b9 | C-7 C-7/Bb | A07 D7b9 |
+G-7 C7     | F-7 Bb7  | Eb6        | F-7 Bb7  |
+"""
+
+ON_THE_SUNNY_SIDE_OF_THE_STREET = """
+title: On The Sunny Side Of The Street
+---
+{ C6  | E7 | FM7    |  C6/G   E7b9/G# |
+  A-7 | D7 | D-7 G7 | [E-7 A7 D-7 G7]
+                      [C6           ] |}
+  G-7 | C7 | FM7    |  %              |
+  A-7 | D7 | D-7    |  G7             |
+  C6  | E7 | FM7    |  C6/G   E7b9/G# |
+  A-7 | D7 | D-7 G7 |  C6     G7      |
+"""
+
+ONCE_I_LOVED = """
+title: Once I Loved
+---
+{ G-7 | C7#5     | FM7  | F#o7   |
+  G-7 | G#o7     | A-7  | A-7/G  |
+  F-7 | Bb7#5    | EbM7 | %      |
+  E07 | A7b9     | DM7  | [D7b9]
+                          [G7  ] |}
+  CM7 | F7       | BbM7 | %      |
+  Bo7 | Bb-6     | A-6  | Ab7#11 |
+  G7  | G-7 A7b9 | D-6  | %      |
+"""
+
+ONE_NOTE_SAMBA = """
+title: One Note Samba
+---
+D-7  | Db7 | C-7       | B7#11  |
+D-7  | Db7 | C-7       | B7#11  |
+F-7  | Bb7 | EbM7      | Ab7    |
+D-7  | Db6 | C-7 B7#11 | Bb6    |
+Eb-7 | Ab7 | DbM7      | %      |
+C#-7 | F#7 | BM7       | C07 F7 |
+D-7  | Db7 | C-7       | B7#11  |
+D-7  | Db7 | C-7       | B7#11  |
+F-7  | Bb7 | EbM7      | Ab7    |
+Db6  | C7  | BM7       | Bb6    |
+"""
+
+ORNITHOLOGY = """
+title: Ornithology
+---
+GM7    | %        | G-7 | C7       |
+FM7    | %        | F-7 | Bb7      |
+EbM7   | A07 D7b9 | G-7 | A07 D7b9 |
+B-7    | E-7      | A-7 | D7       |
+GM7    | %        | G-7 | C7       |
+FM7    | %        | F-7 | Bb7      |
+EbM7   | A07 D7b9 | GM7 | A-7 D7   |
+B-7 E7 | A-7 D7   | G6  | A-7 D7   |
+"""
+
+OUR_LOVE_IS_HERE_TO_STAY = """
+title: Our Love Is Here To Stay
+---
+G7     | G-7 C7 | F6  Bb7  | A-7 D7   |
+G7     | G-7 C7 | Eb7 D7   | B-7 E7   |
+A-7 D7 | G-7 C7 | FM7 BbM7 | E07 A7   |
+D-7    | G7     | G-7      | C7  D7   |
+G7     | G-7 C7 | F6  Bb7  | A-7 D7   |
+G7     | G-7 C7 | Eb7 D7   | B-7 E7   |
+A-7 D7 | G-7 C7 | Eb7 D7   | G-7 G#o7 |
+A-7 D7 | G-7 C7 | F6       | D7       |
+"""
+
+OUT_OF_NOWHERE = """
+title: Out Of Nowhere
+---
+GM7      | %      | Bb-7 | Eb7    |
+GM7      | %      | B-7  | E7b9   |
+A-7      | E7b9   | A-7  | %      |
+Eb7      | %      | A-7  | D7     |
+GM7      | %      | Bb-7 | Eb7    |
+GM7      | %      | B-7  | E7b9   |
+A-7      | E7b9   | A-7  | C-6    |
+B-7 Bbo7 | A-7 D7 | G6   | A-7 D7 |
+"""
+
+PEACE = """
+title: Peace
+---
+A07   D7b9  | G-7 C7   | BM7 . C07 F7 | BbM7 |
+B-7   E7    | AM7 F#-7 | Eb07  Ab7    | DbM7 |
+C7alt B7#11 | BbM7     |
+"""
+
+PERDIDO = """
+title: Perdido
+---
+{ C-7 | F7 | Bb6 |  D-7 G7 |
+  C-7 | F7 | Bb7 | [D-7 G7]
+                   [%     ]|}
+  D7  | %  | G7  |  %      |
+  C7  | %  | F7  |  %      |
+  C-7 | F7 | Bb6 |  D-7 G7 |
+  C-7 | F7 | Bb6 |  D-7 G7 |
+"""
+
+POLKA_DOTS_AND_MOONBEAMS = """
+title: Polka Dots And Moonbeams
+---
+{ FM7 D-7  | G-7   C7       | FM7 D-7  |  G-7 .   Eo  A7 |
+  D-7 Db7  | F/C . A-7 Ab-7 | G-7 C7   | [A-7 D-7 G-7 C7]
+                                         [F6  .   B0  E7]|}
+  AM7 A#o7 | B-7   E7       | AM7 F#-7 |  B-7     E7     |
+  AM7 A#o7 | B-7   E7       | A7  D7   |  G-7     C7     |
+  FM7 D-7  | G-7   C7       | FM7 D-7  |  G-7 .   Eo  A7 |
+  D-7 Db7  | F/C . A-7 Ab-7 | G-7 C7   |  F6  .   G-7 C7 |
+"""
+
+PRELUDE_TO_A_KISS = """
+title: Prelude To A Kiss
+---
+{ D9    G9     | C7  FM7 | B9  E9   |  A7       D-7     |
+  D-7 . G7 G#0 | A-7 D13 | D07 G7b9 | [CM7 .    E-7 A7]
+                                      [CM7 .    F#0 B7] |}
+  EM7   C#-7   | F#07 B7 | G#-7 Go7 |  F#-7     B7      |
+  EM7   C#-7   | F#07 B7 | E7   A7  |  D-7 Eb-7 E-7 Eb7 |
+  D9    G9     | C7  FM7 | B9  E9   |  A7       D-7     |
+  D-7 . G7 G#0 | A-7 D13 | D07 G7b9 |  CM7 .    E-7 A7  |
+"""
+
+RECORDAME = """
+title: Recordame
+---
+A-   | %        | %    | %        |
+C-   | %        | %    | C-7  F7  |
+BbM7 | Bb-7 Eb7 | AbM7 | Ab-7 Db7 |
+GbM7 | G-7  C7  | FM7  | E7#9     |
+"""
+
+ROUND_MIDNIGHT = """
+title: Round Midnight
+---
+{ Eb-7   Eb-7/Db | Co7 . Ab-7 Db7 |  Eb-7             | B-7 E7 Bb-7 Eb7 |
+  Ab-7   Db7     | Eb-7  Ab7      | [Co7   B7#11    ] | Bb7           ]
+                                    [C0 B7 Bb7sus . ] | Eb6           ] |}
+  C07    B7#11   | Bb7#11         |  Co7   B7#11      | Bb7#11          |
+  Ab-7 . F-7 Bb7 | C07   F7       |  Db9   B9         | Ab-7 . F-7  Bb7 |
+  Eb-7   Eb-7/Db | Co7 . Ab-7 Db7 |  Eb-7             | B-7 E7 Bb-7 Eb7 |
+  Ab-7   Db7     | Eb-7  Ab7      |  C0 B7 Bb7sus .   | Eb6             |
+"""
+
+SANDU = """
+title: Sandu
+---
+Eb7 | Ab7 | Eb7    | %       |
+Ab7 | %   | Eb7    | G-7 C7  |
+F-7 | Bb7 | Eb7 C7 | F-7 Bb7 |
+"""
+
+SATIN_DOLL = """
+title: Satin Doll
+---
+{ D-7 G7 | D-7  G7  |  E-7 A7 | E-7 A7 |
+  A-7 D7 | Ab-7 Db7 | [CM7 F7 | E-7 A7]
+                      [CM7    | %     ]|}
+  G-7 C7 | G-7  C7  |  FM7    | %      |
+  A-7 D7 | A-7  D7  |  GM7    | %      |
+  D-7 G7 | D-7  G7  |  E-7 A7 | E-7 A7 |
+  A-7 D7 | Ab-7 Db7 |  CM7 F7 | E-7 A7 |
+"""
+
+SCRAPPLE_FROM_THE_APPLE = """
+title: Scrapple From The Apple
+---
+{ G-7      | C7       |   G-7     | C7      |
+  FM7 F7/A | BbM7 Bo7 | [ FM7 G-7 | A-7 D7 ]
+                        [ FM7 C7  | FM7    ]|}
+  A7       | %        |   D7      | %       |
+  G7       | %        |   C7      | %       |
+  G-7      | C7       |   G-7     | C7      |
+  FM7 F7/A | BbM7 Bo7 |   FM7 G-7 | A-7 D7  |
+"""
+
+SEVEN_STEPS_TO_HEAVEN = """
+title: Seven Steps To Heaven
+---
+{ FM7 Bb7 | E07  A7  | D-7 Ab7 | G7      |
+  G-7     | C7       | Eb6 E6  | F6      |}
+  CM7     | D-7      | E-7     | F-7 Bb7 |
+  EbM7    | Ab-7 Db7 | GbM7    | G-7 C7  |
+  FM7 Bb7 | E07  A7  | D-7 Ab7 | G7      |
+  G-7     | C7       | Eb6 E6  | F6      |
+"""
+
+THE_SHADOW_OF_YOUR_SMILE = """
+title: The Shadow Of Your Smile
+---
+F#-7 | B7b9       | E-7  | A7    |
+A-7  | D7         | GM7  | CM7   |
+F#07 | B7b9       | E-7  | E-7/D |
+C#07 | F#7b9      | F#07 | B7b13 |
+F#-7 | B7b9       | E-7  | A7    |
+A-7  | D7         | B07  | E7b9  |
+A-7  | C-7   F7   | B-7  | E7b13 |
+A7   | D7sus D7b9 | G6   | %     |
+"""
+
+SKYLARK = """
+title: Skylark
+---
+{ EbM7 F-7 | EbM7/G   AbM7  |  EbM7 A7#11 | AbM7 . G-7 C7 |
+  F7       | F-7      Gb7   | [Eb6  C-7   | F-7    Bb7   ]
+                              [Eb6 Bb7#9  | Eb6          ]|}
+  C-7  B7  | Bb-7     Eb7   |  AbM7       | G06    C7b9   |
+  F-   Db7 | Bb-7 Eb7 Ab6 . |  G6    E-7  | A7 D7  G6 Bb7 |
+  EbM7 F-7 | EbM7/G   AbM7  |  EbM7 A7#11 | AbM7 . G-7 C7 |
+  F7       | F-7      Gb7   |  Eb6  Bb7#9 | Eb6    Bb7    |
+"""
+
+SO_WHAT = """
+title: So What
+---
+D-11  | % | % | % |
+D-11  | % | % | % |
+D-11  | % | % | % |
+D-11  | % | % | % |
+Eb-11 | % | % | % |
+Eb-11 | % | % | % |
+D-11  | % | % | % |
+D-11  | % | % | % |
+"""
+
+SOFTLY_AS_IN_A_MORNING_SUNRISE = """
+title: Softly As In A Morning Sunrise
+---
+{ C-7  | D07 G7b9 | C-7  | D07 G7b9 |
+  C-7  | D07 G7b9 |[C-7  | D07 G7b9]
+                   [C-7  | F-7 Bb7 ]|}
+  EbM7 | %        | C7b9 | %        |
+  F-7  | F#o7     | D07  | G7b9     |
+  C-7  | D07 G7b9 | C-7  | D07 G7b9 |
+  C-7  | D07 G7b9 | C-7  | D07 G7b9 |
+"""
+
+SOLAR = """
+title: Solar
+---
+C-M7 | %        | G-7  | C7       |
+FM7  | %        | F-7  | Bb7      |
+EbM7 | Eb-7 Ab7 | DbM7 | D07 G7b9 |
+"""
+
+SOMEDAY_MY_PRINCE_WILL_COME = """
+title: Someday My Prince Will Come
+timesig: 3/4
+---
+BbM7   | D7#5 | EbM7 | G7b9 |
+C-7    | G7b9 | C-7  | F7   |
+D-7    | C#o7 | C-7  | F7   |
+D-7    | C#o7 | C-7  | F7   |
+BbM7   | D7#5 | EbM7 | G7b9 |
+C-7    | G7b9 | C-7  | F7   |
+F-7    | Bb7  | EbM7 | Eo7  |
+BbM7/F | G7   | C-7  | F7   |
+"""
+
+SOMEONE_TO_WATCH_OVER_ME = """
+title: Someone To Watch Over Me
+---
+{ EbM7  Eb7    | AbM7 Abo7 | EbM7/G Gbo7 | Bb7/F Eo7 |
+  F-7 . Go Ab6 | A07  Bb7  | [G7#5 C9    | F-7  Bb7]
+                             [Eb6        | Eb7     ] |}
+  AbM7         | %         |  Ab-6       | Eb6/G     |
+  A07   D7b9   | G7b9      |  C7         | F-7  Bb7  |
+  EbM7  Eb7    | AbM7 Abo7 | EbM7/G Gbo7 | Bb7/F Eo7 |
+  F-7 . Go Ab6 | A07  Bb7  | Eb6         | F-7   Bb7 |
+"""
+
+SONG_FOR_MY_FATHER = """
+title: Song For My Father
+---
+{ F-7     | %     | Eb7 | % |
+  Db7     | C7sus | F-7 | % |}
+  Eb7     | %     | F-7 | % |
+  Eb7 Db7 | C7    | F-7 | % |
+"""
+
+SOPHISTICATED_LADY = """
+title: Sophisticated Lady
+---
+{ Bb-7    | Gb7 F7 E7 Eb7 |  AbM7    | Ab7 G7 Gb7 F7 |
+  Bb7     | Bb-7   Eb7    | [Ab6     | C07    F7b9]
+                            [Ab6     | A07    D7  ]  |}
+  GM7 E-7 | A-7    D7     | B-7 E7b9 | A-7    D7b9   |
+  GM7 E-7 | A-7    D7     | GM7 C-7  | Bb-7 . C0 F7  |
+  Bb-7    | Gb7 F7 E7 Eb7 |  AbM7    | Ab7 G7 Gb7 F7 |
+  Bb7     | Bb-7   Eb7    |  Ab6     | C07    F7b9   |
+"""
+
+# TODO: Speak Low
+
+SPEAK_NO_EVIL = """
+title: Speak No Evil
+---
+{ C-7     | DbM7     | C-7    | DbM7      |
+  C-7     | DbM7     | C-7    | DbM7 Eb-7 |
+  E-7 C-7 | D-7 Bb-7 | A7alt  | Bb-7      |
+  A7alt   | Bb-7     |}
+  A07     | Ab7      | G-7    | Gb7       |
+  F-7     | Bb7      | Eb7#11 | Db7#11    |
+  C-7     | DbM7     | C-7    | DbM7      |
+  C-7     | DbM7     | C-7    | DbM7 Eb-7 |
+  E-7 C-7 | D-7 Bb-7 | A7alt  | Bb-7      |
+  A7alt   | Bb-7     |
+"""
+
+ST_JAMES_INFIRMARY = """
+title: St James Infirmary
+---
+D-7 G-7 | D-7 | D-7 G-7 | D-7    |
+D-7 G-7 | D-7 | Bb7 A7  | D-7 A7 |
+"""
 
 ST_THOMAS = """
 title: St. Thomas
@@ -1423,6 +1908,312 @@ CM7 F7   | E-7 A7   | D-7 G7 | C6 |
 E07      | A7b9     | D-7    | G7 |
 CM7 C7/F | FM7 F#o7 | G7     | C6 |
 """
+
+STABLEMATES = """
+title: Stablemates
+---
+E-7 A7 | Eb-7 Ab7 | DbM7 | C7#5     |
+Ab-7   | Db7      | GbM7 | G07 C7b9 |
+F-7    | Bb7      | Eb-7 | Ab7      |
+DbM7   | %        |
+F-7    | Gb7      | G7   | C7       |
+B7     | Bb7      | A7   | Ab7      |
+E-7 A7 | Eb-7 Ab7 | DbM7 | C7#5     |
+Ab-7   | Db7      | GbM7 | G07 C7b9 |
+F-7    | Bb7      | Eb-7 | Ab7      |
+DbM7   | %        |"""
+
+STAR_EYES = """
+title: Star Eyes
+---
+{ EbM7       | F-7   Bb7  | EbM7       | Eb-7   Ab7    |
+  DbM7       | G-7   C7   | FM7        | B7     Bb7    |}
+  AbM7       | %          | Ab-7       | Db7           |
+  GbM7       | %          | F-7        | Bb7sus Bb7    |
+  EbM7       | F-7   Bb7  | EbM7       | Eb-7   Ab7    |
+  DbM7       | G-7   C7   | FM7        | B7     Bb7    |
+  Eb7#9 D7b9 | Db7#9 C7#9 | F-7 Bb7sus | Eb6 . F-7 Bb7 |
+"""
+
+STAR_DUST = """
+title: Star Dust
+---
+GbM7 | %        | Gb-M7          | F#-7 B7  |
+DbM7 | F-7 Bb7  | Eb-7   Bb7     | Eb-7     |
+Ab7  | Eb-7 Ab7 | DbM7 . Eb-7 Eo | F-7 Bb-7 |
+Eb7  | Bb-7 Eb7 | Ab7    Eb-7    | Ab7 Db7  |
+GbM7 | %        | Gb-M7          | F#-7 B7  |
+DbM7 | F-7 Bb7  | Eb-7   Bb7     | Eb-7     |
+F#-7 | B7       | DbM7   Bb-7    | F-7  Bb7 |
+Eb-7 | Ab7      | DbM7           | Ab-7 Db7 |
+"""
+
+STELLA_BY_STARLIGHT = """
+title: Stella By Starlight
+---
+E07    | A7b9     | C-7     | F7       |
+F-7    | Bb7      | EbM7    | Ab7      |
+BbM7   | E07 A7b9 | D-7     | Bb-7 Eb7 |
+FM7    | E07      | EbM7#11 | D7b9     |
+G7b13  | %        | C-7     | %        |
+Ab7#11 | %        | BbM7    | %        |
+E07    | A7b9     | D07     | G7b9     |
+C07    | F7b9     | BbM7    | %        |
+"""
+
+STOLEN_MOMENTS = """
+title: Stolen Moments
+---
+C-7      | C-6     | C-7    | C-6    |
+F-7      | F-6     | C-7    | C-6    |
+D-  D#-  | E-   F- | F#- F- | E- Eb- |
+D-7 D#o7 | C7/E F- | C-     | GM7    |
+"""
+
+STOMPIN_AT_THE_SAVOY = """
+title: Stompin' At The Savoy
+---
+{ DbM7   | DbM7 Ab7 |  DbM7     | DbM7 Do7 |
+  Eb-7   | Ab7      | [Db6 Bb-7 | Eb-7 Ab7]
+                      [Db6      | Db7     ]|}
+  Gb7 G7 | Gb7      |  B7  C7   | B7       |
+  E7  F7 | E7       |  A7       | Ab7      |
+  DbM7   | DbM7 Ab7 |  DbM7     | DbM7 Do7 |
+  Eb-7   | Ab7      |  Db6 Bb-7 | Eb-7 Ab7 |
+"""
+
+STRAIGHT_NO_CHASER = """
+title: Straight No Chaser
+---
+F7  | Bb7 | F7 | %  |
+Bb7 | %   | F7 | %  |
+C7  | %   | F7 | C7 |
+"""
+
+SUMMERTIME = """
+title: Summertime
+---
+A-7     | A-7 E7b13 | A-7  | A-7 A7b9  |
+D-7     | F7        | B7#5 | E7b9      |
+A-7     | A-7 E7b13 | A-7  | D-7 G7b9  |
+CM7 A-7 | B07 E7b13 | A-7  | B07 E7b13 |
+"""
+
+SWEET_GEORGIA_BROWN = """
+title: Sweet Georgia Brown
+---
+F7     | %        | %       | %        |
+Bb7    | %        | %       | %        |
+Eb7    | %        | %       | %        |
+AbM7   | Bb-7 Eb7 | AbM7    | G07 C7b9 |
+F7     | %        | %       | %        |
+Bb7    | %        | %       | %        |
+F-7    | G07 C7b9 | F-      | Bb-7 Eb7 |
+Ab7 G7 | Gb7 F7   | Bb7 Eb7 | Ab6      |
+"""
+
+# TODO: TAKE_FIVE = """
+# title: Take Five
+# timesig: 5/4
+# ---
+# Eb-  Bb-7 | %         | %        | %         |
+# Eb-  Bb-7 | %         | %        | %         |
+# BbM7 Ab-6 | Bb-7 Eb-7 | Ab-7 Db7 | GbM7      |
+# BbM7 Ab-6 | Bb-7 Eb-7 | Ab-7 Db7 | F07 Bb7b9 |
+# Eb-  Bb-7 | %         | %        | %         |
+# Eb-  Bb-7 | %         | %        | %         |
+# """
+
+TAKE_THE_A_TRAIN = """
+title: Take The A Train
+---
+{ C6  | %  | D7#11 |  %      |
+  D-7 | G7 | C6    | [D-7 G7]
+                     [G-7 C7]|}
+  FM7 | %  | %     |  %      |
+  D7  | %  | D-7   | G7 G7b9 |
+  C6  | %  | D7#11 |  %      |
+  D-7 | G7 | C6    |  D-7 G7 |
+"""
+
+TENDERLY = """
+title: Tenderly
+---
+EbM7   | Ab7     | Eb-7 | Ab7      |
+F-7    | Db7#11  | EbM7 | G07 C7b9 |
+F07    | Bb7     | F07  | Bb7 Bo7  |
+C-7    | F7      | F-7  | Bb7      |
+EbM7   | Ab7     | Eb-7 | Ab7      |
+F-7    | Db7#11  | EbM7 | G07 C7b9 |
+F07    | Bb7 B07 | C-7  | F7  F#o7 |
+G-7 C7 | F-7 Bb7 | Eb6  | F-7 Bb7  |
+"""
+
+TENOR_MADNESS = """
+title: Tenor Madness
+---
+Bb7 | Eb7 | Bb7 | %  |
+Eb7 | %   | Bb7 | %  |
+C-7 | F7  | Bb7 | F7 |
+"""
+
+THE_GIRL_FROM_IPANEMA = """
+title: The Girl From Ipanema
+---
+{ FM7  | %      | G7#11 | %      |
+  G-7  | Gb7#11 | FM7   | [ Gb7 ]
+                          [ %   ]|}
+  F#M7 | %      | B7    | %      |
+  F#-7 | %      | D7    | %      |
+  G-7  | %      | Eb7   | %      |
+  A-7  | D7b9b5 | G-7   | C7b9b5 |
+  FM7  | %      | G7#11 | %      |
+  G-7  | Gb7#11 | FM7   | Gb7    |
+"""
+
+# TODO: The Nearness Of You
+
+THE_NIGHT_HAS_A_THOUSAND_EYES = """
+title: The Night Has A Thousand Eyes
+---
+{ GM7/D | %     | D7sus |  %     |
+  GM7/D | %     | D7sus |  D7    |
+  D-7   | G7    | CM7   |  F7    |
+  GM7/D | D7sus | G/D   | [D7sus]
+                          [GM7  ]|}
+  C-7   | F7    | BbM7  |  %     |
+  Bb-7  | Eb7   | AbM7  |  %     |
+  A-7   | D7sus | GM7   |  E-7   |
+  GM7/D | D7sus | GM7/D |  D7sus |
+"""
+
+THE_SONG_IS_YOU = """
+title: The Song Is You
+---
+CM7  | Ebo7 | D-7    | G7      |
+CM7  | A7   | D-7    | G7      |
+E-7  | A7   | D-7    | G7      |
+F-7  | Bb7  | E-7 A7 | D-7  G7 |
+CM7  | Ebo7 | D-7    | G7      |
+CM7  | A7   | D-7    | G7      |
+E-7  | A7   | D-7    | G7      |
+C6   | %    | %      | F#07 B7 |
+EM7  | %    | F#-7   | B7      |
+EM7  | %    | A#07   | D#7b9   |
+G#-7 | %    | C#7    | %       |
+F#7  | %    | B7     | %       |
+CM7  | Ebo7 | D-7    | G7      |
+G-7  | C7   | FM7    | Bb7     |
+E-7  | A7   | D-7    | G7      |
+C6   | A7   | D-7    | G7      |
+"""
+
+THERE_IS_NO_GREATER_LOVE = """
+title: There Is No Greater Love
+---
+BbM7     | Eb7    | Ab7 | G7     |
+C7       | %      | C-7 | F7     |
+BbM7     | Eb7    | Ab7 | G7     |
+C7       | C-7 F7 | Bb6 | %      |
+A07 D7b9 | G-7    | C7  | F7     |
+BbM7     | Eb7    | Ab7 | G7     |
+C7       | C-7 F7 | Bb6 | C-7 F7 |
+"""
+
+THERE_WILL_NEVER_BE_ANOTHER_YOU = """
+title: There Will Never Be Another You
+---
+EbM7     | %      | D07     | G7b9    |
+C-7      | %      | Bb-7    | Eb7     |
+AbM7     | Db7#11 | EbM7    | C-7     |
+F7       | %      | F-7     | Bb7     |
+EbM7     | %      | D07     | G7b9    |
+C-7      | %      | Bb-7    | Eb7     |
+AbM7     | Db7#11 | EbM7    | A07 D7  |
+EbM7 Ab7 | G-7 C7 | F-7 Bb7 | Eb6 Bb7 |
+"""
+
+THINGS_AINT_WHAT_THEY_USED_TO_BE = """
+title: Things Ain't What They Used To Be
+---
+Ab7  | Db7 | Ab7    | %        |
+Db7  | %   | Ab7    | %        |
+Bb-7 | Eb7 | Ab7 F7 | Bb-7 Eb7 |
+"""
+
+THIS_I_DIG_OF_YOU = """
+title: This I Dig Of You
+---
+BbM7/F | C-7/F    | D-7/F  | C-7/F   |
+D-7/F  | C-7/F    | BbM7/F | F-7 Bb7 |
+EbM7   | E07 A7b9 | D-7    | G7      |
+C#-7   | F#7      | C-7    | F7      |
+BbM7/F | C-7/F    | D-7/F  | C-7/F   |
+D-7/F  | C-7/F    | BbM7/F | F-7 Bb7 |
+EbM7   | E07 A7b9 | D-7    | G7      |
+C-7    | F7       | BbM7   | %       |
+"""
+
+TRISTE = """
+title: Triste
+---
+AM7    | %          | FM7#11   | %      |
+AM7    | %          | C#-7     | F#7b9  |
+B-7    | G#07 C#7b9 | F#-7     | G#7#9  |
+C#M7   | D#-7 G#7   | C#M7 F#7 | B-7 E7 |
+AM7    | %          | A-7      | D7     |
+AM7    | %          | E-7      | A7     |
+DM7    | G7         | C#-7 F#7 | B7     |
+B-7    | E7         | A-7  D7  | A-7 D7 |
+A-7 D7 | A-7 D7   |
+"""
+
+TUNE_UP = """
+title: Tune Up
+---
+E-7 | A7 | DM7  | %   |
+D-7 | G7 | CM7  | %   |
+C-7 | F7 | BbM7 | G-7 |
+E-7 | F7 | BbM7 | A7  |
+E-7 | A7 | DM7  | %   |
+D-7 | G7 | CM7  | %   |
+C-7 | F7 | BbM7 | G-7 |
+E-7 | A7 | DM7  | %   |
+"""
+
+WALKIN = """
+title: Walkin'
+---
+F7  | Bb7 | F7    | C-7 F7 |
+Bb7 | Bo7 | F7    | A-7 D7 |
+G-7 | C7  | F7 D7 | G-7 C7 |
+"""
+
+WATERMELON_MAN = """
+title: Watermelon Man
+---
+F7#9 | %   | %    | %   |
+Bb9  | %   | F7#9 | %   |
+C9   | Bb9 | C9   | Bb9 |
+C9   | Bb9 | F7#9 | %   |
+"""
+
+WAVE = """
+title: Wave
+---
+{ DM7    | Bbo7   | A-7         | D7b9    |
+  GM7    | G-6    | F#13 F#1b13 | B9 B7b9 |
+  E9     | Bb7 A7 | D-7  G7     | D-7 G7  |}
+  G-7/Bb | C7/Bb  | FM7/A       | %       |
+  F-7/Ab | Bb7/Ab | EbM7/G      | A7b9    |
+  DM7    | Bbo7   | A-7         | D7b9    |
+  GM7    | G-6    | F#13 F#1b13 | B9 B7b9 |
+  E9     | Bb7 A7 | D-7  G7     | D-7 G7  |
+"""
+
+# TODO: The Way You Look Tonight
+
+### Pending Song ###
 
 WOODYN_YOU = """
 title: Woody'n You

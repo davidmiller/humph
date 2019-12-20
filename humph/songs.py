@@ -264,6 +264,14 @@ F-7 | D07 G7b9 | C- C-7/Bb | AbM7     |
 D07 | G7b9     | C-        | D07 G7b9 |
 """
 
+BLUE_BOLIVAR_BLUES = """
+title: Blue Bolivar Blues
+---
+Bb7 | Eb7 | Bb7   | %          |
+Eb7 | Ab7 | Eb7   | G07 C7b9b5 |
+C-7 | F7  | Bb7b5 | Bb7        |
+"""
+
 BLUE_BOSSA = """
 title: Blue Bossa
 ---
@@ -422,6 +430,14 @@ title: Caravan
   C7b9 | % | %  | %   |
   C7b9 | % | %  | %   |
   F-   | % | %  | %   |
+"""
+
+CENTRAL_PARK_WEST = """
+title: Central Park West
+---
+BM7 . E-7 A7 | DM7 .    Bb-7 Eb7 | AbM7 . G-7 C7 | FM7 . C#-7 F#7 |
+BM7 . E-7 A7 | DM7 .    Bb-7 Eb7 | BM7           | C#-7/B         |
+BM7          | C#-7/B . C#-7 F#7 |
 """
 
 CEORA = """
@@ -605,6 +621,19 @@ CM7      | F#07 B7b9  | E-  E-/D | C#07 C-6  |
 B-7 E7   | A07  D7b9  | GM7      | A-7  D7   |
 """
 
+EPISTROPHY = """
+title: Epistrophy
+---
+Db7 D7 | Db7 D7 | Db7 D7 | Db7 D7 |
+Eb7 E7 | Eb7 E7 | Eb7 E7 | Eb7 E7 |
+Eb7 E7 | Eb7 E7 | Eb7 E7 | Eb7 E7 |
+Db7 D7 | Db7 D7 | Db7 D7 | Db7 D7 |
+F#-7   | %      | %      | %      |
+B7     | %      | Db7    | D7     |
+Eb7 E7 | Eb7 E7 | Eb7 E7 | Eb7 E7 |
+Db7 D7 | Db7 D7 | Db7 D7 | Db7 D7 |
+"""
+
 EQUINOX = """
 title: Equinox
 ---
@@ -731,6 +760,18 @@ title: Groovin' High
   F7  | %    | F-7 | Bb7      |
 [ G-7 | F#-7 | F-7 | Bb7#9   ]
 [ F-7 | Db7  | Eb7 | F-7 Bb7 ]|}
+"""
+
+HACKENSACK = """
+title: Hackensack
+---
+{ F6  | Bb7 |  F6 | A-7 D7 |
+  G-7 | C7  | [F6 | C7    ]
+              [F6 | %     ]|}
+  Bb7 | Bo7 |  F6 | A-7 D7 |
+  G7  | %   |  C7 | Db7    |
+  F6  | Bb7 |  F6 | A-7 D7 |
+  G-7 | C7  |  F6 | C7     |
 """
 
 HALF_NELSON = """
@@ -1716,6 +1757,8 @@ BbM7 | Bb-7 Eb7 | AbM7 | Ab-7 Db7 |
 GbM7 | G-7  C7  | FM7  | E7#9     |
 """
 
+# TODO: Reflections
+
 ROUND_MIDNIGHT = """
 title: Round Midnight
 ---
@@ -1727,6 +1770,8 @@ title: Round Midnight
   Eb-7   Eb-7/Db | Co7 . Ab-7 Db7 |  Eb-7             | B-7 E7 Bb-7 Eb7 |
   Ab-7   Db7     | Eb-7  Ab7      |  C0 B7 Bb7sus .   | Eb6             |
 """
+
+# TODO: Ruby My Dear
 
 SANDU = """
 title: Sandu
@@ -2213,7 +2258,76 @@ title: Wave
 
 # TODO: The Way You Look Tonight
 
-### Pending Song ###
+WELL_YOU_NEEDENT = """
+title: Well You Needen't
+---
+{ F6     | Gb7    | F6     | Gb7   |
+  F6     | Gb7    | F6     | %     |}
+  Db7    | %      | D7     | %     |
+  A7 Bb7 | B7 Bb7 | A7 Ab7 | G7 C7 |
+  F6     | Gb7    | F6     | Gb7   |
+  F6     | Gb7    | F6     | %     |
+"""
+
+WHAT_IS_THIS_THING_CALLED_LOVE = """
+title: What Is This Thing Called Love
+---
+{ G07 | C7b9 | F-6 | %  |
+  D07 | G7#5 | CM7 | %  |}
+  C-7 | F7   | BM7 | %  |
+  Ab7 | %    | D07 | G7 |
+  G07 | C7b9 | F-6 | %  |
+  D07 | G7#5 | CM7 | %  |
+"""
+
+WHATS_NEW = """
+title: What's New
+---
+{ C6      | Bb-7 Eb7  |  AbM7    | D07 G7b9 |
+  C-7 A07 | D07  G7b9 | [C6 A-7  | D-7 G7]
+                        [C6      | G-7 C7]  | }
+  F6      | Eb-7 Ab7  |  DbM7    | G07 C7b9 |
+  F-7 D07 | G07 C7b9  |  F-6     | D07 G7b9 |
+  C6      | Bb-7 Eb7  |  AbM7    | D07 G7b9 |
+  C-7 A07 | D07  G7b9 | [C6 A-7  | D-7 G7]  |
+"""
+
+WHEN_I_FALL_IN_LOVE = """
+title: When I Fall In Love
+---
+EbM7 C7    | F-7  Bb7  | EbM7 C7   | F-7 Bb7  |
+EbM7 Ab7   | G7b9 C7b9 | F7        | Bb7      |
+EbM7 C7    | F-7 Bb7   | EbM7 Ab7  | G07 C7b9 |
+F-7  D7alt | G07 C7b9  | F-7  C7b9 | F-7 Bb7  |
+EbM7 C7    | F-7  Bb7  | EbM7 C7   | F-7 Bb7  |
+EbM7 Ab7   | G7b9 C7b9 | F7        | Bb7      |
+EbM7 A7#11 | AbM7 D7   | G-7  C7#9 | F-7 Bb7  |
+EbM7 C7    | F-7 Bb7   | Eb6       | F-7 Bb7  |
+"""
+
+WHISPER_NOT = """
+title: Whisper Not
+---
+{ C-7 C-7/Bb | A07 D7b9 | G-7 G-7/F |  E07 A7b9 |
+  D-7 B07    | E07 A7b9 | D-7 E-7   | [F-7 G7b9]
+                                      [F-7 Bb7 ]|}
+  A07        | D7b9     | G-7       |  G-7/F    |
+  E07        | A7b9     | D07       |  G7b9     |
+  C-7 C-7/Bb | A07 D7b9 | G-7 G-7/F |  E07 A7b9 |
+  D-7 B07    | E07 A7b9 | D-7 E-7   |  F-7 G7b9 |
+"""
+
+WILLOW_WEEP_FOR_ME = """
+title: Willow Weep For Me
+---
+{ GM7 C7 | GM7 C7    |   GM7 . A-7 D7 | G6 A-7 Bbo B-7 |
+  C7     | A07 D7b13 | [ GM7   E7     | A-7    D7     ]
+                       [ GM7          | D-7    G7     ]|}
+  C-7    | G-7 G7b9  |   C-7   Bb7    | Ab7    G7b9    |
+  C-7    | G-7 G7b9  |   C-7   Bb7    | Ab7 .  A-7 D7  |
+  GM7 C7 | GM7 C7    |   GM7 . A-7 D7 | G6 A-7 Bbo B-7 |
+  C7     | A07 D7b13 | [ GM7   E7     | A-7    D7      |
+"""
 
 WOODYN_YOU = """
 title: Woody'n You
@@ -2224,4 +2338,59 @@ title: Woody'n You
   Bb-7 Eb7 | Bb-7 Eb7 | Bb-7 Eb7 | AbM7  |
   G07      | C7b9     | F07      | Bb7b9 |
   Eb-7     | Ab7b9    | DbM7     | %     |
+"""
+
+WORK_SONG = """
+title: Work Song
+---
+F- | %   | %     | %  |
+F- | %   | C7    | %  |
+F- | %   | %     | %  |
+F7 | Bb7 | G7 C7 | F- |
+"""
+
+YARDBIRD_SUITE = """
+title: Yardbird Suite
+---
+{ C6  | F-7 Bb7   |  C7  Bb7 | A7         |
+  D7  | G7        | [E-7 A7  | D-7  G7  ]
+                    [C6      | F#07 B7b9] | }
+  E-7 | F#07 B7b9 |  E-7     | A7         |
+  D-7 | E06  D7   |  D7      | D-7  G7    |
+  C6  | F-7 Bb7   |  C7  Bb7 | A7         |
+  D7  | G7        |  E-7 A7  | D-7  G7    |
+"""
+
+YESTERDAYS = """
+title: Yesterdays
+---
+D-         | E07 A7b9 | D-  | E07 A7b9 |
+D- D-M7/C# | D-7/C    | B07 | E7       |
+A7#5       | D9       | G13 | C9       |
+F13        | BbM7     | E07 | A7b9     |
+"""
+
+YOU_DONT_KNOW_WHAT_LOVE_IS = """
+title: You Don't Know What Love Is
+---
+{ F-7      | Db7    C7b9   |  F-7 C7b9 | Db7      |
+  G07 C7b9 | F-7 E7 Eb7 D7 | [Db7      | G07 C7b9]
+                             [Db7 C7b9 | F-6     ]|}
+  Bb-7 Eb7 | AbM7          |  Bb-7 Eb7 | AbM7     |
+  D-7  G7  | CM7           |  Db7      | C7b9     |
+  F-7      | Db7    C7b9   |  F-7 C7b9 | Db7      |
+  G07 C7b9 | F-7 E7 Eb7 D7 |  Db7 C7b9 | F-6      |
+"""
+
+YOU_STEPPED_OUT_OF_A_DREAM = """
+title: You Stepped Out Of A Dream
+---
+CM7  | %   | DbM7     | %      |
+Bb-7 | Eb7 | AbM7     | %      |
+G-7  | C7  | FM7      | %      |
+A-7  | D7  | Eb-7 Ab7 | D-7 G7 |
+CM7  | %   | DbM7     | %      |
+Bb-7 | Eb7 | Gb7#11   | F7     |
+D07  | G7  | E-7      | A7     |
+D-7  | G7  | CM7 A7   | D-7 G7 |
 """

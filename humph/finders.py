@@ -451,6 +451,44 @@ class FindI7IV7Movements(Finder):
         return count, instances
 
 
+class FindMinor7Minor251of5(Finder):
+    """
+    Find occurrences of G-7 G-7/F | E07 A7b9 | D-7
+    """
+    name = "-7 -7/7 Minor 251 of 5"
+
+    def find(self):
+        """
+        Returns count, instances
+        """
+        count     = 0
+        instances = []
+
+        chord_sequences = self.sequences_of(5)
+
+        for sequence in chord_sequences:
+            # Frist bar is e.g. C-7 C-7/Bb
+            if sequence[0].minor:
+                if sequence[0].root == sequence[1].root:
+                    if sequence[1].bass_note:
+                        if interval(sequence[0].root, sequence[1].bass_note) == m7:
+                            # bars 2&3 are a minor 251 of 5
+                            interval1 = interval(sequence[0].root, sequence[2].root)
+                            interval2 = interval(sequence[2].root, sequence[3].root)
+                            interval3 = interval(sequence[3].root, sequence[4].root)
+                            if sequence[2].half_diminished:
+                                if sequence[3].dominant:
+                                    if sequence[4].minor:
+                                        if  interval1 == M6:
+                                            if interval2 == P4:
+                                                if interval3 == P4:
+
+                                                    count += 1
+                                                    instances.append(sequence)
+        return count, instances
+
+
+
 FINDERS = [
     Find251s,
     Find25I7s,
@@ -464,4 +502,5 @@ FINDERS = [
     FindMajorParallelMinor,
     FindSearsRoebuckBridges,
     FindI7IV7Movements,
+    FindMinor7Minor251of5,
 ]

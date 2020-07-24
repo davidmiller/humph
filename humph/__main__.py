@@ -5,14 +5,14 @@ import collections
 import sys
 
 from humph.finders import FINDERS
-from humph.repertoire import Repertiore
+from humph.repertoire import Repertoire
 from humph.utils import perc
 
 def analyse(sheet=None):
     """
     Run all finders for either one lead sheet passed in, or all lead sheets
     """
-    rep = Repertiore()
+    rep = Repertoire()
     rep.load()
 
     sheets = rep.songs
@@ -52,7 +52,7 @@ def analyse(sheet=None):
 
 
 def rank_for_finder():
-    rep = Repertiore()
+    rep = Repertoire()
     rep.load()
 
     for finder in FINDERS:
@@ -64,8 +64,8 @@ def rank_for_finder():
 
 
 def main():
-    # rank_for_finder()
-    # return
+    rank_for_finder()
+    return
     if len(sys.argv) > 1:
         analyse(sheet=" ".join(sys.argv[1:]))
     else:

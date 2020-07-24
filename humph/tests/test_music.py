@@ -1,5 +1,5 @@
 """
-Unittests form humph.music
+Unittests for humph.music
 """
 import unittest
 
@@ -170,5 +170,31 @@ class LeadSheetTestCase(unittest.TestCase):
         sheet = music.LeadSheet(raw)
         self.assertEqual('A', sheet.bars[2].chords[0].root)
 
-    # repr
-    # iter
+    def test_repr(self):
+        raw = """
+        title: Dominant Cycle
+        ---
+        A7 | D7  | G7  | C7
+        F7 | Bb7 | Eb7 | Ab7
+        """
+
+        expected = """Dominant Cycle
+[[A7], [D7], [G7], [C7, F7]]
+[[Bb7], [Eb7], [Ab7]]"""
+
+        sheet = music.LeadSheet(raw)
+
+        self.assertEqual(expected, sheet.__repr__())
+
+    def test_repr_no_title(self):
+        raw = """
+        A7 | D7  | G7  | C7
+        F7 | Bb7 | Eb7 | Ab7
+        """
+
+        expected = """[[A7], [D7], [G7], [C7, F7]]
+[[Bb7], [Eb7], [Ab7]]"""
+
+        sheet = music.LeadSheet(raw)
+
+        self.assertEqual(expected, sheet.__repr__())

@@ -5,7 +5,7 @@ from humph.music import LeadSheet
 from humph import songs
 
 
-class Repertiore(object):
+class Repertoire(object):
     """
     Single object containing the standard repertoire
     """
@@ -37,7 +37,6 @@ class Repertiore(object):
                 filtered.append(s)
 
         return filtered
-
 
     def rank_for_finder(self, finder):
         """

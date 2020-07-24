@@ -53,7 +53,7 @@ class Finder(object):
         in a lead sheet. They return a tuple of
         (COUNT, INSTANCES)
         """
-        pass
+        raise NotImplementedError()
 
     def sequences_of(self, length):
         """
